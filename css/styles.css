@@ -1,0 +1,144 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+.nav .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #d4967d;
+  gap: 10px;
+}
+.nav .logo a p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+.nav .logo img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+.nav .navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav .navLinks img {
+  width: 12px;
+  margin-left: 5px;
+}
+.nav .navLinks li {
+  padding: 0;
+}
+.nav .navLinks li:first-child {
+  display: none;
+}
+.nav .navLinks li a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.nav .navLinks li a + span {
+  display: inline-flex;
+  align-items: center;
+}
+.nav .navLinks li:hover a {
+  color: #d4967d;
+  text-decoration: underline;
+}
+.nav .navLinks .dropdown {
+  position: relative;
+}
+.nav .navLinks .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  padding: 5px 0;
+  list-style: none;
+}
+.nav .navLinks .dropdown .dropdown-menu li {
+  padding: 0;
+}
+.nav .navLinks .dropdown .dropdown-menu li a {
+  display: block;
+  padding: 8px 15px;
+  color: #4b5563;
+}
+.nav .navLinks .dropdown .dropdown-menu li a:hover {
+  background-color: #f3f4f6;
+  color: #1e3a8a;
+  text-decoration: none;
+}
+.nav .navLinks .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.mobileNav {
+  display: none;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.mobileNav .menuIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+@media (max-width: 1000px) {
+  .nav .logo a p {
+    display: none;
+  }
+  .nav .logo img {
+    width: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .nav .navLinks {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: smaller;
+}
+
+.siteContent {
+  padding-top: 5vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.siteContent .headerText {
+  font-size: 2rem;
+  color: #63463b;
+  margin-bottom: 20px;
+}

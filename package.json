@@ -1,0 +1,17 @@
+{
+  "name": "compassionproject",
+  "version": "1.0.0",
+  "description": "A site for The Compassion Project Inc.",
+  "main": "app/app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "scss": "sass scss/styles.scss css/styles.css --watch --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

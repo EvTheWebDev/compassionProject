@@ -1,0 +1,147 @@
+.nav {
+  // Basic Layout and Container Styling
+  // The background-color is commented out, but you can uncomment it or choose a color.
+  // background-color: #333;
+//   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px; // Add padding to the nav itself for spacing
+  margin-top: 10px; // Keep top margin
+
+  // --- Logo Section Styling ---
+  .logo {
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #d4967d;
+      gap: 10px; // Spacing between the image and the text
+
+      p {
+        font-size: 1.25rem; // Use a relative unit for better scaling
+        font-weight: 700; // Make the name bold
+        margin: 0; // Remove default paragraph margin
+      }
+    }
+
+    img {
+      width: 50px; // Reduced the logo size for a more standard nav look
+      height: auto;
+      object-fit: contain; // Ensure the image scales correctly
+    }
+  }
+
+  // --- Navigation Links Section Styling ---
+  .navLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    img {
+      width: 12px;
+      margin-left: 5px;
+    }
+
+    li {
+      padding: 0;
+      
+      &:first-child {
+        display: none;
+      }
+
+      a {
+        color: #4b5563;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+
+        & + span {
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+
+      &:hover {
+        a {
+          color: #d4967d;
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    // 👇 All dropdown functionality should live here, targeting the .dropdown class
+    .dropdown {
+        position: relative; // 1. Set the li as the reference point
+
+        .dropdown-menu {
+            // 2. THIS IS THE CRITICAL LINE: It hides the menu initially
+            display: none; 
+            
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 10;
+
+            background-color: white;
+            border: 1px solid #ccc;
+            min-width: 150px;
+            padding: 5px 0;
+            list-style: none;
+
+            li {
+              padding: 0;
+
+              a {
+                display: block;
+                padding: 8px 15px;
+                color: #4b5563;
+
+                &:hover {
+                  background-color: #f3f4f6;
+                  color: #1e3a8a;
+                  text-decoration: none;
+                }
+              }
+            }
+        }
+
+        // 3. THIS IS THE CRITICAL LINE: It shows the menu on hover
+        &:hover .dropdown-menu {
+            display: block;
+        }
+    }
+  }
+}
+.mobileNav {
+  display: none; // Hidden by default, shown on smaller screens
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+
+  .menuIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4b5563;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .nav .logo a p {
+    display: none;
+  }
+  .nav .logo img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav .navLinks {
+    display: none;
+  }
+}
