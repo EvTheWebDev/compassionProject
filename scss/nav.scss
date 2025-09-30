@@ -1,13 +1,9 @@
 .nav {
-  // Basic Layout and Container Styling
-  // The background-color is commented out, but you can uncomment it or choose a color.
-  // background-color: #333;
-//   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px; // Add padding to the nav itself for spacing
-  margin-top: 10px; // Keep top margin
+  padding: 10px 20px;
+  margin-top: -10px;
 
   // --- Logo Section Styling ---
   .logo {
@@ -19,16 +15,16 @@
       gap: 10px; // Spacing between the image and the text
 
       p {
-        font-size: 1.25rem; // Use a relative unit for better scaling
-        font-weight: 700; // Make the name bold
-        margin: 0; // Remove default paragraph margin
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0;
       }
     }
 
     img {
-      width: 50px; // Reduced the logo size for a more standard nav look
+      width: 100px;
       height: auto;
-      object-fit: contain; // Ensure the image scales correctly
+      object-fit: contain;
     }
   }
 
@@ -36,21 +32,35 @@
   .navLinks {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 20px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-
     img {
       width: 12px;
       margin-left: 5px;
     }
 
     li {
-      padding: 0;
-      
+      padding: 10px 15px;
+
       &:first-child {
         display: none;
+      }
+      i {
+        padding-left: 10px;
+        transition: rotate 0.35s ease-in-out, padding 0.5s ease-in-out;
+      }
+
+      .dropdownHolder {
+        &:hover {
+          i {
+            rotate: 180deg;
+            padding-right: 10px;
+            padding-left: 0px;
+          }
+        }
       }
 
       a {
@@ -58,7 +68,7 @@
         text-decoration: none;
         font-size: 1rem;
         font-weight: 500;
-        transition: color 0.3s ease-in-out;
+        transition: color 0.2s ease-in-out;
 
         & + span {
           display: inline-flex;
@@ -73,47 +83,55 @@
         }
       }
     }
-    
+
     // 👇 All dropdown functionality should live here, targeting the .dropdown class
     .dropdown {
-        position: relative; // 1. Set the li as the reference point
+      position: relative; // 1. Set the li as the reference point
 
-        .dropdown-menu {
-            // 2. THIS IS THE CRITICAL LINE: It hides the menu initially
-            display: none; 
-            
-            position: absolute;
-            top: 100%;
-            left: 0;
-            z-index: 10;
+      .dropdown-menu {
+        display: none;
 
-            background-color: white;
-            border: 1px solid #ccc;
-            min-width: 150px;
-            padding: 5px 0;
-            list-style: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
 
-            li {
-              padding: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        min-width: 150px;
+        padding: 5px 0;
+        list-style: none;
 
-              a {
-                display: block;
-                padding: 8px 15px;
-                color: #4b5563;
+        li {
+          padding: 0;
 
-                &:hover {
-                  background-color: #f3f4f6;
-                  color: #1e3a8a;
-                  text-decoration: none;
-                }
-              }
-            }
-        }
-
-        // 3. THIS IS THE CRITICAL LINE: It shows the menu on hover
-        &:hover .dropdown-menu {
+          a {
             display: block;
+            padding: 8px 15px;
+            color: #4b5563;
+            text-decoration: none;
+
+            &:hover {
+              background-color: #f3f4f6;
+              color: #d4967d;
+              text-decoration: underline;
+            }
+          }
         }
+      }
+
+      &:hover {
+        .dropdown-menu {
+          display: block;
+        }
+        .dropdownHolder {
+          i {
+            rotate: 180deg;
+            padding-right: 10px;
+            padding-left: 0px;
+          }
+        }
+      }
     }
   }
 }
@@ -129,7 +147,6 @@
     color: #4b5563;
   }
 }
-
 
 @media (max-width: 1000px) {
   .nav .logo a p {

@@ -1,4 +1,5 @@
 @use "nav";
+@use "home";
 
 
 * {
@@ -21,12 +22,12 @@ a {
 
 .siteContent {
     padding-top: 5vh;
-    width: 80%;
+    // width: 80%;
     margin: 0 auto;
 
     .headerText {
         font-size: 2rem;
-        color: #63463b; // Dark blue for headers
+        color: #63463b;
         margin-bottom: 20px;
     }
 }
