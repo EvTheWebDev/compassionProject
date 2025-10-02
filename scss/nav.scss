@@ -1,3 +1,5 @@
+@use "vars";
+
 .nav {
   display: flex;
   align-items: center;
@@ -7,6 +9,7 @@
 
   // --- Logo Section Styling ---
   .logo {
+    z-index: 2;
     a {
       display: flex;
       align-items: center;
@@ -25,6 +28,7 @@
       width: 100px;
       height: auto;
       object-fit: contain;
+      
     }
   }
 
@@ -33,38 +37,35 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 20px;
+    gap: 5px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     img {
       width: 12px;
-      margin-left: 5px;
     }
 
     li {
-      padding: 10px 15px;
+      padding: 0px 10px;
 
       &:first-child {
         display: none;
       }
       i {
-        padding-left: 10px;
-        transition: rotate 0.35s ease-in-out, padding 0.5s ease-in-out;
+        padding-left: 0px;
+        transition: rotate 0.2s ease-in-out, padding 0.2s ease-in-out;
       }
 
       .dropdownHolder {
         &:hover {
           i {
             rotate: 180deg;
-            padding-right: 10px;
-            padding-left: 0px;
           }
         }
       }
 
       a {
-        color: #4b5563;
+        color: vars.$siteBrown;
         text-decoration: none;
         font-size: 1rem;
         font-weight: 500;
@@ -78,7 +79,7 @@
 
       &:hover {
         a {
-          color: #d4967d;
+          color: vars.$siteOrange;
           text-decoration: underline;
         }
       }
@@ -90,7 +91,7 @@
 
       .dropdown-menu {
         display: none;
-
+        width: max-content;
         position: absolute;
         top: 100%;
         left: 0;
@@ -104,16 +105,16 @@
 
         li {
           padding: 0;
-
+          padding: 5px 0;
           a {
             display: block;
             padding: 8px 15px;
-            color: #4b5563;
+            color: vars.$siteGray;
             text-decoration: none;
 
             &:hover {
               background-color: #f3f4f6;
-              color: #d4967d;
+              color: vars.$siteOrange;
               text-decoration: underline;
             }
           }
@@ -136,19 +137,124 @@
   }
 }
 .mobileNav {
-  display: none; // Hidden by default, shown on smaller screens
-  background-color: #fff;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 20px; // Stick to the top of the header/nav bar
+    right: 30px; 
+    z-index: 100; // High z-index to ensure it sits above everything
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    // Hide the whole navigation off-screen initially on mobile
+    // This is the element you'll use JavaScript to toggle display: block or flex
+    
+    .menuIcon {
+        font-size: 2.5rem; // Slightly larger icon
+        cursor: pointer;
+        color: vars.$siteOrange; // Use a brand color
+        padding: 10px; // Make the tap target larger
+        display: none;
+    }
 
-  .menuIcon {
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #4b5563;
-  }
+    .mobileNavLinks {
+        // Position the menu box right below the icon
+        position: absolute;
+        top: 100%; 
+        right: 0;
+        
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        min-width: 200px;
+        z-index: 101; 
+        
+        // Initially hidden by default, JS will toggle this with a class/inline style
+        display: none; 
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 20px;
+
+            li {
+                border-bottom: 1px solid #eee;
+                padding: 12px 0;
+
+                a {
+                    color: vars.$siteBrown;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    display: block;
+                    width: 100%;
+                    transition: color 0.2s;
+
+                    &:hover {
+                        color: vars.$siteOrange;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            li:last-child {
+                border-bottom: none;
+            }
+        }
+    }
 }
 
-@media (max-width: 1000px) {
+
+// .rippleEffect {
+//   display: none;
+//     position: fixed; // Covers the entire viewport
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 90; // Must be lower than the menu (z-index 100+) but above all other content
+
+//     // 1. Base Translucency
+//     background-color: rgba(149, 148, 148, 0.85); // Light white/grey base overlay
+
+//     // 2. The Ripple/Topographical Map Effect
+//     // This creates repeated, translucent colored lines
+//     background-image: repeating-linear-gradient(
+//         45deg,
+//         rgba(vars.$siteOrange, 0.1),       // Start of the primary ripple color (low opacity)
+//         rgba(vars.$siteOrange, 0.1) 5px,   // Line thickness
+//         rgba(vars.$siteBrown, 0.05) 5px, // Start of the secondary ripple color (even lower opacity)
+//         rgba(vars.$siteBrown, 0.05) 10px // Line thickness
+//     );
+    
+//     // 3. Optional: Add a subtle animation to make them look like actual moving ripples
+//     background-size: 200% 200%; // Make the gradient larger than the viewport
+//     animation: rippleMove 40s linear infinite; // Animate the background position slowly
+// }
+
+.rippleEffect {
+  display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+};
+
+// Keyframes for the subtle ripple movement animation
+@keyframes rippleMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
   .nav .logo a p {
     display: none;
   }
@@ -157,8 +263,16 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 749px) {
+ 
   .nav .navLinks {
     display: none;
+  }
+  .mobileNav {
+    .menuIcon {
+        display: block;
+    }
+    justify-content: space-between;
+    align-items: center;
   }
 }

@@ -12,3 +12,6 @@
 # project
 /css/styles.css.map
 .prepros
+
+# FiveServer
+fiveserver.config.js

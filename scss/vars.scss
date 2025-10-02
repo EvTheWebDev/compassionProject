@@ -1,0 +1,21 @@
+$siteBrown: #63463b;
+$siteOrange: #e07b39;
+$siteLightOrange: #f2a365;
+$siteGray: #4b5563;
+$siteLight: #fceeead9;
+
+@mixin siteBtn {
+  padding: 15px 25px;
+  background-color: $siteOrange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $siteLightOrange;
+  }
+  &:active {
+    background-color: #c96c2e;
+  }
+}
