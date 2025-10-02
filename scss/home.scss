@@ -7,7 +7,7 @@
     height: 50vh;
     width: 100%;
     background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
     margin-top: -50px;
 
     .heroColorOverlay {
@@ -16,7 +16,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(118, 88, 68, 0.65);
+      background-color: rgba(92, 70, 55, 0.75);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -203,7 +203,7 @@
 
     h3 {
         font-size: 2.2rem;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .metric-grid {
@@ -264,21 +264,29 @@
         h4 {
             font-size: 1.8rem;
             color: vars.$siteOrange;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: #666;
             margin-bottom: 30px;
         }
+        
     }
     
-    // Specific styles for donate box if needed
-    .cta-box { 
+\    .cta-box { 
         border-bottom: 5px solid vars.$siteOrange; // A bottom border accent
+        
     }
 }
+
+.twoButtonHolder {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
 
 /* ============================================== */
 /* Optional: Events & News Section */
