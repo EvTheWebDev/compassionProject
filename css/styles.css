@@ -294,6 +294,10 @@
   background-color: rgba(252, 238, 234, 0.8509803922);
 }
 
+.btnText p {
+  color: white;
+}
+
 /* ============================================== */
 /* 1. Mission Statement Section */
 /* ============================================== */
@@ -399,24 +403,33 @@
   margin-bottom: 30px;
 }
 .impact-metrics .metric-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
   gap: 30px;
+}
+.impact-metrics .metric-grid .metric-item .number,
+.impact-metrics .metric-grid .metric-item .label {
+  transition: color 0.3s ease;
 }
 .impact-metrics .metric-grid .metric-item .number {
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgba(252, 238, 234, 0.8509803922);
+  color: rgba(255, 255, 255, 0.65);
   margin-bottom: 5px;
 }
 .impact-metrics .metric-grid .metric-item .label {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.65);
 }
 .impact-metrics .metric-grid .metric-item:hover .number {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .impact-metrics .metric-grid .metric-item:hover .label {
   color: white;
@@ -457,15 +470,18 @@
   color: #666;
   margin-bottom: 30px;
 }
-.call-to-action-block \  .cta-box {
+.call-to-action-block \ .cta-box {
   border-bottom: 5px solid #e07b39;
 }
 
-.twoButtonHolder {
+.miniButtons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
+}
+.miniButtons a i {
+  font-size: 25px;
 }
 
 /* ============================================== */
