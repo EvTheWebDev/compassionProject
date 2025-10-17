@@ -2,6 +2,9 @@
 
 // Hero Styling (Top Image)
 .homePage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   width: 100% !important;
   .hero {
     height: 50vh;
@@ -56,21 +59,14 @@
   }
 }
 
-// Basic Container for content width
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
-// Reusable button styles (assuming you have a mixin as discussed)
+
 .btn {
-  @include vars.siteBtn; // Your base button style
+  @include vars.siteBtn; 
 }
 
-// Example for different button variants
 .btn-primary {
-  background-color: vars.$siteOrange; // Your primary brand color
+  background-color: vars.$siteOrange; 
 }
 
 .btn-accent {
@@ -138,11 +134,9 @@
   }
 
   .program-cards {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(280px, 1fr)
-    ); // Responsive grid
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     gap: 30px;
 
     .card {
