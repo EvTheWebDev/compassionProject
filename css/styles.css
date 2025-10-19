@@ -451,7 +451,7 @@
 /* 4. Primary Engagement CTA Block */
 /* ============================================== */
 .call-to-action-block {
-  padding: 80px 0;
+  padding: 80px 20px;
   background-color: #fefefe;
 }
 .call-to-action-block .container {
@@ -733,6 +733,7 @@
   text-align: left;
   border: 1px solid #ddd;
   border-radius: 8px;
+  background-color: white;
 }
 .foundation-section .mission-vision-grid .mission-vision-block h3 {
   color: #e07b39;
