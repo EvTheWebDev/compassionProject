@@ -2,7 +2,7 @@
 
 // Hero Styling (Top Image)
 .homePage {
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
   width: 100% !important;
  .hero {
@@ -90,6 +90,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 
     .card {
       @include vars.siteCard;
@@ -160,6 +162,8 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px; // Spacing between the two CTA boxes
+    max-width: 1200px;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr; // Two columns on wider screens
@@ -214,10 +218,12 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+    max-width: 1200px;
+    margin: 0 auto;
    .card {
     @include vars.siteCard;
     width: 75%;
+    max-width: 800px;
     ul, ol {
       margin: 0 auto;
       margin-bottom: 20px;

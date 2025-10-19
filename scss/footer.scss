@@ -94,7 +94,6 @@
 
     // Desktop: No changes to flex-direction, just adjust padding
     @media (min-width: 768px) {
-        // ❌ REMOVED: flex-direction: row; and justify-content: space-between;
         padding: 30px 50px;
     }
 
@@ -102,7 +101,7 @@
     p:first-child {
         font-size: 1.1rem;
         font-weight: 600;
-        margin-bottom: 0; // Removed margin since gap handles spacing
+        margin-bottom: 10px;
     }
 
     // --- Button Group Holder ---

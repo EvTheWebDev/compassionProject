@@ -201,7 +201,6 @@
   }
 }
 .homePage {
-  max-width: 1200px;
   margin: 0 auto;
   width: 100% !important;
 }
@@ -353,6 +352,8 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .program-overview .program-cards .card {
   background-color: #fefefe;
@@ -458,6 +459,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .call-to-action-block .container {
@@ -508,6 +511,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .events-news .eventCards .card {
   background-color: #fefefe;
@@ -557,6 +562,7 @@
 }
 .events-news .eventCards .card {
   width: 75%;
+  max-width: 800px;
 }
 .events-news .eventCards .card ul, .events-news .eventCards .card ol {
   margin: 0 auto;
@@ -810,6 +816,129 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
 }
 
+.programs-page {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+.programs-page .programs-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.programs-page .programs-header h2 {
+  font-size: 2.5rem;
+  color: #63463b;
+}
+.programs-page .programs-header p {
+  color: #63463b;
+}
+.programs-page .programs-grid {
+  width: 80%;
+  max-width: 1200px;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+}
+.programs-page .program-card {
+  position: relative;
+  height: 400px;
+  width: 40%;
+  min-width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.programs-page .program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.programs-page .card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  z-index: 2;
+}
+.programs-page .card-content .clickable {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.programs-page .card-content {
+  background: rgba(0, 0, 0, 0.7);
+}
+.programs-page .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.programs-page .title i {
+  font-size: 2rem;
+  color: #e07b39;
+  margin-right: 10px;
+}
+.programs-page .title h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+}
+.programs-page p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+.programs-page .card-link {
+  padding: 15px 25px;
+  background-color: #e07b39;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+}
+.programs-page .card-link:hover {
+  background-color: #f2a365;
+}
+.programs-page .card-link:active {
+  background-color: #c96c2e;
+}
+.programs-page .card-link {
+  display: inline-block;
+  background-color: #e07b39;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+.programs-page .card-link:hover {
+  background-color: rgb(198.864628821, 97.423580786, 31.135371179);
+}
+.programs-page .thanksgiving {
+  background: url("https://picsum.photos/seed/4/200/300") no-repeat center center/cover;
+}
+.programs-page .hardship-relief {
+  background: url("https://picsum.photos/seed/3/200/300") no-repeat center center/cover;
+}
+.programs-page .kindness-ripple {
+  background: url("https://picsum.photos/seed/1/200/300") no-repeat center center/cover;
+}
+.programs-page .partnerships {
+  background: url("https://picsum.photos/seed/2/200/300") no-repeat center center/cover;
+}
+
+@media (max-width: 1100px) {
+  .programs-grid {
+    flex-direction: column;
+  }
+  .programs-grid .program-card {
+    width: 80%;
+  }
+}
 .contact-page {
   padding: 80px 0;
   background-color: #f7f7f7;
@@ -986,7 +1115,7 @@
 .footer p:first-child {
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .footer .buttonsHolder {
   display: flex;
