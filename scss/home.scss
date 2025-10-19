@@ -4,59 +4,11 @@
 .homePage {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
   width: 100% !important;
-  .hero {
-    height: 50vh;
-    width: 100%;
-    background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
-    margin-top: -50px;
-
-    .heroColorOverlay {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(92, 70, 55, 0.75);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-
-      .heroContent {
-        color: white;
-        max-width: 1000px;
-        padding: 25px;
-
-        h1 {
-          font-size: 3rem;
-          margin-bottom: 0.8rem;
-        }
-
-        p {
-          font-size: 1.2rem;
-          margin-bottom: 2rem;
-        }
-
-        .heroBtn {
-          @include vars.siteBtn;
-        }
-        .tagline {
-          text-align: center;
-          position: absolute;
-          bottom: 10px;
-          left: 0;
-          right: 0;
-          h3 {
-            font-size: 1.2rem;
-            color: white;
-          }
-        }
-      }
-    }
-  }
+ .hero {
+  @include vars.siteHero;
+  background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
+ }
 }
 
 
@@ -93,7 +45,7 @@
 .mission-statement {
   padding: 60px 0;
   text-align: center;
-  background-color: #f8f8f8;
+  background-color: vars.$siteLightGray;
 
   h2 {
     font-size: 2.5rem;
@@ -135,57 +87,12 @@
 
   .program-cards {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 30px;
 
     .card {
-      background-color: #fefefe;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      }
-
-      i {
-        color: vars.$siteOrange; // Your accent color for icons
-        margin-bottom: 20px;
-      }
-
-      h4 {
-        font-size: 1.4rem;
-        color: vars.$siteOrange;
-        margin-bottom: 15px;
-      }
-
-      p {
-        font-size: 0.95rem;
-        color: #777;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-
-      .card-link {
-        color: vars.$siteOrange;
-        text-decoration: none;
-        font-weight: 600;
-
-        i {
-          font-size: 0.9em;
-          margin-left: 5px;
-          transition: margin-left 0.3s ease;
-        }
-
-        &:hover i {
-          margin-left: 10px;
-        }
-      }
+      @include vars.siteCard;
     }
   }
 }
@@ -302,6 +209,24 @@
   padding: 60px 0;
   text-align: center;
   background-color: #f2f2f2;
+
+  .eventCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   .card {
+    @include vars.siteCard;
+    width: 75%;
+    ul, ol {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:#665;
+      
+    }
+   }
+  }
 
   h3 {
     font-size: 2rem;

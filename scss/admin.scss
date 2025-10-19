@@ -1,0 +1,128 @@
+@use 'vars';
+
+// Org Docs Page
+
+.documents-page {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+
+    .document-header {
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+        h2 {
+            font-size: 2.5rem;
+            color: vars.$siteOrange
+        }
+        p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+    }
+
+    .document-list-wrapper {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .list-heading {
+        color: vars.$siteOrange;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+    }
+
+    .document-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px dashed #eee;
+            padding: 15px 0;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f9f9f9;
+            }
+
+            // Styling the icon
+            i {
+                font-size: 1.2rem;
+                color: vars.$siteOrange;
+                margin-right: 15px;
+                flex-shrink: 0; // Prevent icon from shrinking
+            }
+
+            a {
+                flex-grow: 1;
+                color: vars.$primary-color;
+                text-decoration: none;
+                font-size: 1.1rem;
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            
+            // Hint text for file type
+            .type-hint {
+                font-size: 0.85rem;
+                color: #888;
+                margin-left: 10px;
+                padding: 3px 8px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                flex-shrink: 0;
+            }
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    // --- Footer Block for Requests ---
+    .annual-reports-placeholder {
+        margin-top: 50px;
+        padding: 30px;
+        text-align: center;
+        background-color: vars.$siteOrange;
+        color: white;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 25px;
+
+        h3 {
+            color: vars.$siteLightGray;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+        .btn-secondary {
+            // Re-style secondary button to stand out on dark background
+            @include vars.siteBtn;
+            background-color: white; 
+            color: vars.$siteOrange;
+            &:hover {
+                background-color: vars.$siteLightOrange;
+                color: white;
+            }
+        }
+    }
+}

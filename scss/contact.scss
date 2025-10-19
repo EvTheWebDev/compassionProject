@@ -1,0 +1,167 @@
+@use 'vars';
+
+.contact-page {
+    padding: 80px 0;
+    background-color: #f7f7f7; // A light, neutral background
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 20px;
+
+        h2 {
+            font-size: 2.5rem;
+            color: vars.$siteOrange;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        i {
+            margin-left: 5px;
+        }
+    }
+    
+    // --- Grid Layout ---
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        @media (min-width: 992px) {
+            grid-template-columns: 3fr 2fr; // Form takes more space than info
+        }
+    }
+
+    // --- Form Styling ---
+    .contact-form-wrapper {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        margin: 0 auto;
+
+        h3 {
+            color: vars.$siteOrange;
+            margin-bottom: 25px;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: vars.$siteOrange;
+                outline: none;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+    
+    .btn-submit {
+        @include vars.siteBtn; // Use your established button style
+        width: 100%; // Make the submit button full width for prominence
+        margin-top: 15px;
+
+    }
+
+
+    // --- Info Column Styling ---
+    .contact-info {
+        width: 90%;
+        margin: 0 auto;
+        h3 {
+            color: vars.$siteOrange;
+            margin-bottom: 30px;
+            border-bottom: 2px solid vars.$siteOrange;
+            padding-bottom: 10px;
+        }
+        
+        .info-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            i {
+                font-size: 1.5rem;
+                color: vars.$siteOrange;
+                margin-right: 15px;
+                width: 30px;
+                text-align: center;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+                color: vars.$siteOrange;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                margin-left: 20px;
+                color: #555;
+                font-size: 1 rem;
+            }
+            a {
+                color: #555;
+                font-size: 1rem;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: vars.$siteOrange;
+                }
+            }
+        }
+        
+        .map-placeholder {
+            margin-top: 40px;
+            background-color: #ddd;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            border-radius: 4px;
+            
+            p.small-text {
+                font-size: 0.9rem;
+                color: #333;
+            }
+        }
+    }
+}
+
+.phoneLink {
+//    background-color: red;
+   pointer-events: none;
+   text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .phoneLink {
+        pointer-events: all;
+        text-decoration: underline;
+    }
+}

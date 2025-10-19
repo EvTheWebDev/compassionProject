@@ -1,8 +1,11 @@
+@use 'vars';
 @use "nav";
 @use "home";
-@use 'vars';
 @use 'about';
+@use 'contact';
 @use 'footer';
+
+@use 'admin';
 * {
  margin: 0;
  padding: 0;
@@ -12,7 +15,7 @@ html, body {
  height: 100%;
  background-color: vars.$siteLight;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p{
  margin-bottom: 16px;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -23,8 +26,8 @@ a {
 }
 
 .siteContent {
-    padding-top: 5vh;
-    width: 80%;
+    padding-top: 4vh;
+    // width: 80%;
     margin: 0 auto;
 
     .headerText {
@@ -33,4 +36,12 @@ a {
         margin-bottom: 20px;
         margin-top: -4.5vh;
     }
+}
+
+.bg2 {
+    background-color: vars.$siteLightGray;
+}
+
+.bg1 {
+    background-color: vars.$bg1;
 }
