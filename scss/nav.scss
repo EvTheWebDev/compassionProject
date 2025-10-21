@@ -79,7 +79,7 @@
 
       &:hover {
         a {
-          color: vars.$siteOrange;
+          color: vars.$sitePrimary;
           text-decoration: underline;
         }
       }
@@ -114,7 +114,7 @@
 
             &:hover {
               background-color: #f3f4f6;
-              color: vars.$siteOrange;
+              color: vars.$sitePrimary;
               text-decoration: underline;
             }
           }
@@ -151,7 +151,7 @@
     .menuIcon {
         font-size: 2.5rem; // Slightly larger icon
         cursor: pointer;
-        color: vars.$siteOrange; // Use a brand color
+        color: vars.$sitePrimary; // Use a brand color
         padding: 10px; // Make the tap target larger
         display: none;
     }
@@ -189,7 +189,7 @@
                     transition: color 0.2s;
 
                     &:hover {
-                        color: vars.$siteOrange;
+                        color: vars.$sitePrimary;
                         text-decoration: none;
                     }
                 }
@@ -219,8 +219,8 @@
 //     // This creates repeated, translucent colored lines
 //     background-image: repeating-linear-gradient(
 //         45deg,
-//         rgba(vars.$siteOrange, 0.1),       // Start of the primary ripple color (low opacity)
-//         rgba(vars.$siteOrange, 0.1) 5px,   // Line thickness
+//         rgba(vars.$sitePrimary, 0.1),       // Start of the primary ripple color (low opacity)
+//         rgba(vars.$sitePrimary, 0.1) 5px,   // Line thickness
 //         rgba(vars.$siteBrown, 0.05) 5px, // Start of the secondary ripple color (even lower opacity)
 //         rgba(vars.$siteBrown, 0.05) 10px // Line thickness
 //     );

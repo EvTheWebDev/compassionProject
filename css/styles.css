@@ -62,7 +62,7 @@
   align-items: center;
 }
 .nav .navLinks li:hover a {
-  color: #e07b39;
+  color: #c9a49c;
   text-decoration: underline;
 }
 .nav .navLinks .dropdown {
@@ -93,7 +93,7 @@
 }
 .nav .navLinks .dropdown .dropdown-menu li a:hover {
   background-color: #f3f4f6;
-  color: #e07b39;
+  color: #c9a49c;
   text-decoration: underline;
 }
 .nav .navLinks .dropdown:hover .dropdown-menu {
@@ -117,7 +117,7 @@
 .mobileNav .menuIcon {
   font-size: 2.5rem;
   cursor: pointer;
-  color: #e07b39;
+  color: #c9a49c;
   padding: 10px;
   display: none;
 }
@@ -150,7 +150,7 @@
   transition: color 0.2s;
 }
 .mobileNav .mobileNavLinks ul li a:hover {
-  color: #e07b39;
+  color: #c9a49c;
   text-decoration: none;
 }
 .mobileNav .mobileNavLinks ul li:last-child {
@@ -237,7 +237,7 @@
 }
 .homePage .hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -267,7 +267,7 @@
 
 .btn {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -282,11 +282,11 @@
 }
 
 .btn-primary {
-  background-color: #e07b39;
+  background-color: #c9a49c;
 }
 
 .btn-accent {
-  background-color: #e07b39;
+  background-color: #c9a49c;
 }
 .btn-accent:hover {
   background-color: #f2a365;
@@ -313,7 +313,7 @@
 }
 .mission-statement h2 {
   font-size: 2.5rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 20px;
 }
 .mission-statement .intro-text {
@@ -344,7 +344,7 @@
 }
 .program-overview h3 {
   font-size: 2rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 50px;
 }
 .program-overview .program-cards {
@@ -374,12 +374,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .program-overview .program-cards .card i {
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 20px;
 }
 .program-overview .program-cards .card h4 {
   font-size: 1.4rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 15px;
 }
 .program-overview .program-cards .card p {
@@ -389,7 +389,7 @@
   margin-bottom: 20px;
 }
 .program-overview .program-cards .card .card-link {
-  color: #e07b39;
+  color: #c9a49c;
   text-decoration: none;
   font-weight: 600;
 }
@@ -407,7 +407,7 @@
 /* ============================================== */
 .impact-metrics {
   padding: 40px 0;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-align: center;
 }
@@ -477,7 +477,7 @@
 }
 .call-to-action-block .cta-box h4 {
   font-size: 1.8rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 20px;
 }
 .call-to-action-block .cta-box p {
@@ -486,7 +486,7 @@
   margin-bottom: 30px;
 }
 .call-to-action-block \ .cta-box {
-  border-bottom: 5px solid #e07b39;
+  border-bottom: 5px solid #c9a49c;
 }
 
 .miniButtons {
@@ -533,12 +533,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .events-news .eventCards .card i {
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 20px;
 }
 .events-news .eventCards .card h4 {
   font-size: 1.4rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 15px;
 }
 .events-news .eventCards .card p {
@@ -548,7 +548,7 @@
   margin-bottom: 20px;
 }
 .events-news .eventCards .card .card-link {
-  color: #e07b39;
+  color: #c9a49c;
   text-decoration: none;
   font-weight: 600;
 }
@@ -572,7 +572,7 @@
 }
 .events-news h3 {
   font-size: 2rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 30px;
 }
 .events-news p {
@@ -620,7 +620,7 @@
 }
 .about-hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -652,7 +652,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #e07b39;
+  color: #c9a49c;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -679,8 +679,8 @@
   color: #555;
 }
 .narrative-section .narrative-subtitle {
-  color: #e07b39;
-  border-left: 4px solid #e07b39;
+  color: #c9a49c;
+  border-left: 4px solid #c9a49c;
   padding-left: 15px;
   margin-top: 35px;
   margin-bottom: 20px;
@@ -702,7 +702,7 @@
   text-align: center;
 }
 .inspiration-block h3 {
-  color: #e07b39;
+  color: #c9a49c;
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
@@ -713,7 +713,7 @@
 }
 .inspiration-block ul li {
   font-style: italic;
-  color: #e07b39;
+  color: #c9a49c;
   padding: 5px 0;
   font-size: 1.1rem;
 }
@@ -742,7 +742,7 @@
   background-color: white;
 }
 .foundation-section .mission-vision-grid .mission-vision-block h3 {
-  color: #e07b39;
+  color: #c9a49c;
   border-bottom: 2px solid #f9f9f9;
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -769,12 +769,12 @@
 }
 .values-grid .value-card i {
   font-size: 1.8rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 10px;
 }
 .values-grid .value-card h4 {
   font-size: 1.1rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 5px;
 }
 .values-grid .value-card p {
@@ -788,7 +788,7 @@
 }
 .about-cta .btn-primary {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -880,7 +880,7 @@
 }
 .programs-page .title i {
   font-size: 2rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-right: 10px;
 }
 .programs-page .title h4 {
@@ -895,7 +895,7 @@
 }
 .programs-page .card-link {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -910,13 +910,13 @@
 }
 .programs-page .card-link {
   display: inline-block;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   padding: 8px 15px;
   text-decoration: none;
 }
 .programs-page .card-link:hover {
-  background-color: rgb(198.864628821, 97.423580786, 31.135371179);
+  background-color: rgb(183, 133.6666666667, 123);
 }
 .programs-page .thanksgiving {
   background: url("https://picsum.photos/seed/4/200/300") no-repeat center center/cover;
@@ -950,7 +950,7 @@
 }
 .contact-page .contact-header h2 {
   font-size: 2.5rem;
-  color: #e07b39;
+  color: #c9a49c;
 }
 .contact-page .contact-header p {
   font-size: 1.1rem;
@@ -979,7 +979,7 @@
   margin: 0 auto;
 }
 .contact-page .contact-form-wrapper h3 {
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 25px;
 }
 .contact-page .form-group {
@@ -1004,7 +1004,7 @@
 .contact-page .form-group input[type=text]:focus,
 .contact-page .form-group input[type=email]:focus,
 .contact-page .form-group textarea:focus {
-  border-color: #e07b39;
+  border-color: #c9a49c;
   outline: none;
 }
 .contact-page .form-group textarea {
@@ -1012,7 +1012,7 @@
 }
 .contact-page .btn-submit {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1034,9 +1034,9 @@
   margin: 0 auto;
 }
 .contact-page .contact-info h3 {
-  color: #e07b39;
+  color: #c9a49c;
   margin-bottom: 30px;
-  border-bottom: 2px solid #e07b39;
+  border-bottom: 2px solid #c9a49c;
   padding-bottom: 10px;
 }
 .contact-page .contact-info .info-block {
@@ -1046,14 +1046,14 @@
 }
 .contact-page .contact-info .info-block i {
   font-size: 1.5rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-right: 15px;
   width: 30px;
   text-align: center;
 }
 .contact-page .contact-info .info-block h4 {
   font-size: 1.2rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin: 0;
 }
 .contact-page .contact-info .info-block p {
@@ -1068,7 +1068,7 @@
   transition: all 0.2s ease-in-out;
 }
 .contact-page .contact-info .info-block a:hover {
-  color: #e07b39;
+  color: #c9a49c;
 }
 .contact-page .contact-info .map-placeholder {
   margin-top: 40px;
@@ -1139,11 +1139,11 @@
   transition: color 0.3s ease;
 }
 .footer .footerBtn:hover {
-  color: #e07b39;
+  color: #c9a49c;
 }
 .footer .docsButton {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1166,8 +1166,8 @@
   text-decoration: none;
 }
 .footer .docsButton:hover {
-  background-color: #e07b39;
-  border-color: #e07b39;
+  background-color: #c9a49c;
+  border-color: #c9a49c;
 }
 .footer .devCallout {
   margin-top: 15px;
@@ -1185,7 +1185,7 @@
   font-size: 1rem;
 }
 .footer .devCallout a:hover {
-  color: #e07b39;
+  color: #c9a49c;
   text-decoration: underline;
 }
 .footer .devCallout i {
@@ -1194,7 +1194,7 @@
   transition: color 0.3s;
 }
 .footer .devCallout i:hover {
-  color: #e07b39;
+  color: #c9a49c;
 }
 
 .documents-page {
@@ -1210,7 +1210,7 @@
 }
 .documents-page .document-header h2 {
   font-size: 2.5rem;
-  color: #e07b39;
+  color: #c9a49c;
 }
 .documents-page .document-header p {
   font-size: 1.1rem;
@@ -1223,7 +1223,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 .documents-page .list-heading {
-  color: #e07b39;
+  color: #c9a49c;
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -1246,7 +1246,7 @@
 }
 .documents-page .document-list li i {
   font-size: 1.2rem;
-  color: #e07b39;
+  color: #c9a49c;
   margin-right: 15px;
   flex-shrink: 0;
 }
@@ -1279,7 +1279,7 @@
   margin-top: 50px;
   padding: 30px;
   text-align: center;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   border-radius: 10px;
   width: 80%;
@@ -1296,7 +1296,7 @@
 }
 .documents-page .annual-reports-placeholder .btn-secondary {
   padding: 15px 25px;
-  background-color: #e07b39;
+  background-color: #c9a49c;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1311,7 +1311,7 @@
 }
 .documents-page .annual-reports-placeholder .btn-secondary {
   background-color: white;
-  color: #e07b39;
+  color: #c9a49c;
 }
 .documents-page .annual-reports-placeholder .btn-secondary:hover {
   background-color: #f2a365;

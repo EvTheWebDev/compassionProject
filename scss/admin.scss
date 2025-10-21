@@ -15,7 +15,7 @@
 
         h2 {
             font-size: 2.5rem;
-            color: vars.$siteOrange
+            color: vars.$sitePrimary
         }
         p {
             font-size: 1.1rem;
@@ -31,7 +31,7 @@
     }
     
     .list-heading {
-        color: vars.$siteOrange;
+        color: vars.$sitePrimary;
         border-bottom: 2px solid #eee;
         padding-bottom: 10px;
         margin-bottom: 20px;
@@ -57,7 +57,7 @@
             // Styling the icon
             i {
                 font-size: 1.2rem;
-                color: vars.$siteOrange;
+                color: vars.$sitePrimary;
                 margin-right: 15px;
                 flex-shrink: 0; // Prevent icon from shrinking
             }
@@ -99,7 +99,7 @@
         margin-top: 50px;
         padding: 30px;
         text-align: center;
-        background-color: vars.$siteOrange;
+        background-color: vars.$sitePrimary;
         color: white;
         border-radius: 10px;
         width: 80%;
@@ -118,7 +118,7 @@
             // Re-style secondary button to stand out on dark background
             @include vars.siteBtn;
             background-color: white; 
-            color: vars.$siteOrange;
+            color: vars.$sitePrimary;
             &:hover {
                 background-color: vars.$siteLightOrange;
                 color: white;

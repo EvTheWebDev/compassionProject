@@ -76,7 +76,7 @@
         
         i {
             font-size: 2rem;
-            color: vars.$siteOrange;
+            color: vars.$sitePrimary;
             margin-right: 10px;
         }
         h4 {
@@ -95,13 +95,13 @@
     .card-link {
         @include vars.siteBtn; // Use your mixin
         display: inline-block;
-        background-color: vars.$siteOrange; // Bright button on dark background
+        background-color: vars.$sitePrimary; // Bright button on dark background
         color: white;
         padding: 8px 15px;
         text-decoration: none;
         
         &:hover {
-            background-color: darken(vars.$siteOrange, 10%);
+            background-color: darken(vars.$sitePrimary, 10%);
         }
     }
     

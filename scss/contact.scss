@@ -11,7 +11,7 @@
 
         h2 {
             font-size: 2.5rem;
-            color: vars.$siteOrange;
+            color: vars.$sitePrimary;
         }
         p {
             font-size: 1.1rem;
@@ -44,7 +44,7 @@
         margin: 0 auto;
 
         h3 {
-            color: vars.$siteOrange;
+            color: vars.$sitePrimary;
             margin-bottom: 25px;
         }
     }
@@ -70,7 +70,7 @@
             transition: border-color 0.3s;
 
             &:focus {
-                border-color: vars.$siteOrange;
+                border-color: vars.$sitePrimary;
                 outline: none;
             }
         }
@@ -93,9 +93,9 @@
         width: 90%;
         margin: 0 auto;
         h3 {
-            color: vars.$siteOrange;
+            color: vars.$sitePrimary;
             margin-bottom: 30px;
-            border-bottom: 2px solid vars.$siteOrange;
+            border-bottom: 2px solid vars.$sitePrimary;
             padding-bottom: 10px;
         }
         
@@ -106,7 +106,7 @@
 
             i {
                 font-size: 1.5rem;
-                color: vars.$siteOrange;
+                color: vars.$sitePrimary;
                 margin-right: 15px;
                 width: 30px;
                 text-align: center;
@@ -114,7 +114,7 @@
 
             h4 {
                 font-size: 1.2rem;
-                color: vars.$siteOrange;
+                color: vars.$sitePrimary;
                 margin: 0;
             }
 
@@ -129,7 +129,7 @@
                 font-size: 1rem;
                 transition: all .2s ease-in-out;
                 &:hover {
-                    color: vars.$siteOrange;
+                    color: vars.$sitePrimary;
                 }
             }
         }

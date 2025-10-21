@@ -18,11 +18,11 @@
 }
 
 .btn-primary {
-  background-color: vars.$siteOrange; 
+  background-color: vars.$sitePrimary; 
 }
 
 .btn-accent {
-  background-color: vars.$siteOrange;
+  background-color: vars.$sitePrimary;
   &:hover {
     background-color: vars.$siteLightOrange;
   }
@@ -49,7 +49,7 @@
 
   h2 {
     font-size: 2.5rem;
-    color: vars.$siteOrange;
+    color: vars.$sitePrimary;
     margin-bottom: 20px;
   }
   .intro-text {
@@ -81,7 +81,7 @@
 
   h3 {
     font-size: 2rem;
-    color: vars.$siteOrange;
+    color: vars.$sitePrimary;
     margin-bottom: 50px;
   }
 
@@ -104,7 +104,7 @@
 /* ============================================== */
 .impact-metrics {
   padding: 40px 0;
-  background-color: vars.$siteOrange;
+  background-color: vars.$sitePrimary;
   color: white;
   text-align: center;
 
@@ -180,7 +180,7 @@
 
     h4 {
       font-size: 1.8rem;
-      color: vars.$siteOrange;
+      color: vars.$sitePrimary;
       margin-bottom: 20px;
     }
 
@@ -192,7 +192,7 @@
   }
 
   \ .cta-box {
-    border-bottom: 5px solid vars.$siteOrange; // A bottom border accent
+    border-bottom: 5px solid vars.$sitePrimary; // A bottom border accent
   }
 }
 
@@ -236,7 +236,7 @@
 
   h3 {
     font-size: 2rem;
-    color: vars.$siteOrange;
+    color: vars.$sitePrimary;
     margin-bottom: 30px;
   }
 

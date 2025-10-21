@@ -1,5 +1,7 @@
 $siteBrown: #63463b;
-$siteOrange: #e07b39;
+// $sitePrimary: #e07b39;
+// $sitePrimary: #999b80;
+$sitePrimary: #c9a49c;
 $siteLightOrange: #f2a365;
 $siteGray: #4b5563;
 $siteLight: #fceeead9;
@@ -9,7 +11,7 @@ $primary-color: #576479;
 
 @mixin siteBtn {
   padding: 15px 25px;
-  background-color: $siteOrange;
+  background-color: $sitePrimary;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -44,13 +46,13 @@ $primary-color: #576479;
   }
 
   i {
-    color: $siteOrange; // Your accent color for icons
+    color: $sitePrimary; // Your accent color for icons
     margin-bottom: 20px;
   }
 
   h4 {
     font-size: 1.4rem;
-    color: $siteOrange;
+    color: $sitePrimary;
     margin-bottom: 15px;
   }
 
@@ -62,7 +64,7 @@ $primary-color: #576479;
   }
 
   .card-link {
-    color: $siteOrange;
+    color: $sitePrimary;
     text-decoration: none;
     font-weight: 600;
 
