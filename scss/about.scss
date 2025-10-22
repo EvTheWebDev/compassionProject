@@ -1,181 +1,285 @@
-@use 'vars'; 
-
+@use "vars";
 
 .about-page {
-    margin: 40px 0px;
-    color: #333;
+  margin: 40px 0px;
+  color: #333;
 }
 
 /* --- Hero & Titles --- */
 .about-hero {
-    @include vars.siteHero;
-    background: url("../assets/img/aboutHeroPlaceholder.jpg") no-repeat center center/cover;
-    height: 300px;
-    width: 100%;
+  @include vars.siteHero;
+  background: url("../assets/img/aboutHero.jpg") no-repeat center center/cover;
+  height: 300px;
+  width: 100%;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    color: vars.$sitePrimary;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: vars.$sitePrimary;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 /* --- Narrative Styles --- */
 
-.mainAboutContent {
-    padding: 20px;
-}
 .narrative-section {
-    max-width: 800px;
-    margin: 0 auto;
-    
-    .lead-text {
-        font-size: 1.3rem;
-        font-weight: 400;
-        margin-bottom: 30px;
-        line-height: 1.6;
-    }
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
 
-    p {
-        line-height: 1.6;
-        margin-bottom: 20px;
-        color: #555;
-    }
+  .purposeSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-    .narrative-subtitle {
-        color: vars.$sitePrimary;
-        border-left: 4px solid vars.$sitePrimary;
-        padding-left: 15px;
-        margin-top: 35px;
-        margin-bottom: 20px;
-        font-size: 1.8rem;
-    }
+    .imgHolder {
+      max-width: 1200px;
+      min-width: 250px;
+      margin: 20px auto;
+      text-align: center; 
+      img {
+        max-width: 100%;
 
-    .current-mission {
-        background-color: #e9eff5; // Subtle blue background
+        height: auto;
+
         border-radius: 8px;
-        padding: 20px;
-        margin-top: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        // Style the caption text
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 10px;
+        font-style: italic;
+      }
     }
+  }
+  @media (max-width: 950px) {
+    .purposeSection {
+        flex-direction: column;
+    }
+  }
+
+  .lead-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .narrative-subtitle {
+    color: vars.$sitePrimary;
+    border-left: 4px solid vars.$sitePrimary;
+    padding-left: 15px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  .current-mission {
+    background-color: #e9eff5; // Subtle blue background
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+  }
 }
 
 /* --- Inspiration Block (Why We Do What We Do) --- */
 .inspiration-block {
-    background-color: #fcf6f2; // Light orange background
-    padding: 40px;
-    margin-top: 50px;
-    border-radius: 8px;
-    text-align: center;
-    
-    h3 { 
-        color: vars.$sitePrimary; 
-        font-size: 1.6rem;
-        margin-bottom: 20px;
-    }
+  background-color: #fcf6f2; // Light orange background
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
 
-    ul {
-        list-style: none;
-        padding: 0;
-        margin-bottom: 20px;
+  h3 {
+    color: vars.$sitePrimary;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
 
-        li {
-            font-style: italic;
-            color: vars.$sitePrimary;
-            padding: 5px 0;
-            font-size: 1.1rem;
-        }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+
+    li {
+      font-style: italic;
+      color: vars.$sitePrimary;
+      padding: 5px 0;
+      font-size: 1.1rem;
+      font-weight: bolder;
     }
+  }
+}
+
+// About the Board Section
+.meet-the-board {
+  background-color: vars.$sitePrimary;
+  .alt-color-title {
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .boardMembers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .member {
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 20px;
+
+      h3,
+      h4 {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      h4 {
+        margin-bottom: 20px;
+      }
+
+      .boardMemberPic {
+        width: 150px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 /* --- Mission, Vision, Values --- */
 .foundation-section {
-    margin-top: 50px;
-    text-align: center;
-    
-    .mission-vision-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-        margin-bottom: 40px;
+  margin-top: 50px;
+  text-align: center;
 
-        @media (min-width: 768px) {
-            grid-template-columns: 1fr 1fr;
-        }
+  .mission-vision-grid {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
 
-        .mission-vision-block {
-            padding: 20px;
-            text-align: left;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: white;
-            
-            h3 {
-                color: vars.$sitePrimary;
-                border-bottom: 2px solid #f9f9f9;
-                padding-bottom: 10px;
-                margin-bottom: 15px;
-            }
-        }
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
     }
+
+    .mission-vision-block {
+      padding: 20px;
+      text-align: left;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: white;
+
+      h3 {
+        color: vars.$sitePrimary;
+        border-bottom: 2px solid #f9f9f9;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 /* --- Core Values Grid --- */
+h3 {
+  color: vars.$sitePrimary;
+  font-size: 30px;
+}
 .values-grid {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-    
-    .value-card {
-        width: 200px;
-        padding: 20px 10px;
-        border: 1px solid #eee;
-        background-color: white;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
-        
-        i {
-            font-size: 1.8rem;
-            color: vars.$sitePrimary;
-            margin-bottom: 10px;
-        }
-        h4 {
-            font-size: 1.1rem;
-            color: vars.$sitePrimary; 
-            margin-bottom: 5px;
-        }
-        p {
-            font-size: 0.9rem;
-            color: #777;
-        }
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+
+  .value-card {
+    width: 200px;
+    padding: 20px 10px;
+    border: 1px solid #eee;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+
+    i {
+      font-size: 1.8rem;
+      color: vars.$sitePrimary;
+      margin-bottom: 10px;
     }
+    h4 {
+      font-size: 1.1rem;
+      color: vars.$sitePrimary;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  }
 }
 
-.about-cta {
-    text-align: center;
-    margin-top: 50px;
-    
-    .btn-primary {
-        @include vars.siteBtn; // Use your mixin for the primary button
-    }
-}
+.helpOptions {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  p {
+    font-size: 30px;
+    font-weight: bolder;
+  }
 
-.donateHolder {
+  .option {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    margin-top: 80px;
-    background-color: vars.$siteLightGray;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+
+    a {
+      @include vars.siteBtn;
+    }
+    h2 {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.donateHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .helpOptions {
+    flex-direction: column;
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }

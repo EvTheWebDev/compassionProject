@@ -7,8 +7,17 @@
   width: 100% !important;
  .hero {
   @include vars.siteHero;
+  h1 {
+    font-size: 3rem;
+  }
   background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
 }
 
 
@@ -24,12 +33,12 @@
 .btn-accent {
   background-color: vars.$sitePrimary;
   &:hover {
-    background-color: vars.$siteLightOrange;
+    background-color: vars.$siteLightPrimary;
   }
 }
 
 .btn-secondary {
-  background-color: vars.$siteLightOrange;
+  background-color: vars.$siteLightPrimary;
   &:hover {
     background-color: vars.$siteLight;
   }
@@ -111,6 +120,7 @@
   h3 {
     font-size: 2.2rem;
     margin-bottom: 30px;
+    color: rgb(255, 255, 255);
   }
 
   .metric-grid {
@@ -246,3 +256,4 @@
     margin-bottom: 40px;
   }
 }
+
