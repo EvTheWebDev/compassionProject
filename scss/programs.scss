@@ -1,59 +1,189 @@
-@use 'vars';
+@use "vars";
 
 .programsPage {
-    margin: 40px 0px;
-    .programs-hero {
+  margin: 40px 0px;
+  .programs-hero {
     @include vars.siteHero;
-    background: url("../assets/img/programsHero.jpg") no-repeat center center/cover;
+    background: url("../assets/img/programsHero.jpg") no-repeat center
+      center/cover;
     height: 300px;
     width: 100%;
-    
-}
-    .programGrid {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        .programTitle {
-            color: white;
-        }
-        .programCard {
-            @include vars.siteCard;
-            padding: 20px;
-            min-width: 300px;
-            border-radius: 10px;
-            height: 30vh;
-            min-height: 250px;
-            max-height: 500px;
-            background-color: vars.$siteLightPrimary;
-            margin-top: 25px;
-            margin-bottom: 20px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: column
-        }
-        .programBtn {
-            @include vars.siteBtn;
-            background-color: white;
-            color: vars.$siteDarkPrimary;
-            &:hover {
-                background-color: vars.$sitePrimary;
-            }
-            &:active {
-                background-color: vars.$siteDarkPrimary;
-                color: white;
-            }
-        }
+  }
+  h2 {
+    color: vars.$siteBrown;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .programGrid {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .programTitle {
+      color: white;
     }
+    .programCard {
+    // 1. Reset Mixin Defaults & Define Container
+    // Use an empty container to hold the background image and define dimensions
+    @include vars.siteCard; // Inherit width, shadow, hover, etc.
+    
+    position: relative; // Needed for the absolute positioned link
+    min-width: 320px;
+    height: 420px; // Fixed height for visual consistency
+    padding: 0; // Remove inherited padding
+
+    // 2. Background Image (Example: Thanksgiving)
+    background: url('assets/img/program-thanksgiving.jpg') no-repeat center center/cover;
+    color: white; // Ensure text stands out against background image
+    
+    // We remove the inner Flexbox items from the programCard, 
+    // as the content is now defined by .programClickable and its content.
+    display: block; 
+    
+    // Resetting unnecessary styles from the old block
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.programClickable {
+    // 3. Full-Card Clickable Area + Content Overlay
+    display: flex; // Use flex to position content inside the clickable area
+    flex-direction: column; 
+    justify-content: flex-end; // Push content to the bottom of the card
+    
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 10px;
+    z-index: 1; // Ensure the link is above the image but below the text (if styled differently)
+    
+    // Translucent gradient overlay for text readability
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%);
+    
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        // Slightly lighten the overlay on hover
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .programTitle {
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 0; // Reset margins
+        margin-bottom: 10px;
+    }
+    
+    .programDesc {
+        color: #ddd;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 10px; // Space before the implied button area
+    }
+}
+.thanksgiving, .leanna, .chrf, .kindnessRipple{
+    background: url("../assets/img/logo.png") no-repeat center
+      center/cover;
+}
+.thanksgiving {
+    background: url("../assets/img/thanksgivingCover.jpg") no-repeat center
+      center/cover;
+}
+.kindnessRipple {
+    background: url("../assets/img/kindnessRippleCover.jpg") no-repeat center
+      center/cover;
+}
+.chrf {
+    background: url("../assets/img/chrfCover.jpg") no-repeat center
+      center/cover;
+}
+
+  }
 }
 
 @media (max-width: 850px) {
-    .programsPage {
-        .programGrid {
+  .programsPage {
+    .programGrid {
+      flex-direction: column;
+    }
+  }
+}
+
+// Program Page Styling
+
+.programPage {
+  background-color: vars.$bg1;
+
+
+  .pageContent {
+    padding: 20px;
+    margin-top: -20px;
+    display: fl;
+    
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .programDetails {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .programStats {
+            padding: 20px;
+            background-color: vars.$sitePrimary;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            h3 {
+                color: white;
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    font-size: 20px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin-bottom: 20px;
+                    .metricTitle {
+                        font-weight: bold;
+
+                    }
+                    .metric {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        @media (max-width: 1000px) {
             flex-direction: column;
+            .programStats {
+                margin-top: 25px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+                .metricList {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    .wholeMetric {
+                        padding: 20px;
+                    }
+                }
+            }
+            
         }
     }
+  }
+  
 }

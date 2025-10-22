@@ -10,10 +10,70 @@
     height: 300px;
     width: 100%;
     .heroContent {
-      margin-top: 20px;
       h1 {
         color: white;
+
       }
+    }
+  }
+  .donateHolder {
+    .disclaimer {
+        // margin-top: 20px;
+        background-color: vars.$sitePrimary;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        color: white;
+        font-size: 2vmin;
+        h3 {
+            color: white;
+            font-size: 4vmin;
+        }
+        a {
+            color: vars.$siteLight;
+            transition: color 0.15s ease-in-out;
+            &:hover {
+                color: vars.$siteBrown;
+            }
+        }
+    }
+    .donateOptions {
+        margin: 50px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        width: 80%;
+        .option {
+            @include vars.siteCard;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 45%;
+            min-width: 300px;
+            &:hover {
+                
+            }
+            img {
+                max-width: 200px;
+                border-radius: 20px;
+            }
+            h2 {
+                color: vars.$sitePrimary;
+            }
+            a {
+                @include vars.siteBtn;
+                margin-bottom: 30px;
+            }
+            margin-bottom: 10px;
+        }
     }
   }
 }

@@ -10,6 +10,9 @@
   h1 {
     font-size: 3rem;
   }
+  .heroBtn {
+    margin-top: 10px;
+  }
   background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
  }
 }
@@ -52,7 +55,7 @@
 /* 1. Mission Statement Section */
 /* ============================================== */
 .mission-statement {
-  padding: 60px 0;
+  padding: 60px 10px;
   text-align: center;
   background-color: vars.$siteLightGray;
 

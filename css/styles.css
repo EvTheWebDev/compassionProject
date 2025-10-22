@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #999b80;
+  color: #87ac76;
   gap: 10px;
 }
 .nav .logo a p {
@@ -62,7 +62,7 @@
   align-items: center;
 }
 .nav .navLinks li:hover a {
-  color: #999b80;
+  color: #87ac76;
   text-decoration: underline;
 }
 .nav .navLinks .dropdown {
@@ -93,7 +93,7 @@
 }
 .nav .navLinks .dropdown .dropdown-menu li a:hover {
   background-color: #f3f4f6;
-  color: #999b80;
+  color: #87ac76;
   text-decoration: underline;
 }
 .nav .navLinks .dropdown:hover .dropdown-menu {
@@ -117,7 +117,7 @@
 .mobileNav .menuIcon {
   font-size: 2.5rem;
   cursor: pointer;
-  color: #999b80;
+  color: #87ac76;
   padding: 10px;
   display: none;
 }
@@ -150,7 +150,7 @@
   transition: color 0.2s;
 }
 .mobileNav .mobileNavLinks ul li a:hover {
-  color: #999b80;
+  color: #87ac76;
   text-decoration: none;
 }
 .mobileNav .mobileNavLinks ul li:last-child {
@@ -227,15 +227,9 @@
   max-width: 1000px;
   padding: 25px;
 }
-.homePage .hero .heroColorOverlay .heroContent h1 {
-  margin-bottom: 0.8rem;
-}
-.homePage .hero .heroColorOverlay .heroContent p {
-  margin-bottom: 2rem;
-}
 .homePage .hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -243,10 +237,10 @@
   border: none;
 }
 .homePage .hero .heroColorOverlay .heroContent .heroBtn:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .homePage .hero .heroColorOverlay .heroContent .heroBtn:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .homePage .hero .heroColorOverlay .heroContent .tagline {
   text-align: center;
@@ -270,6 +264,9 @@
 .homePage .hero h1 {
   font-size: 3rem;
 }
+.homePage .hero .heroBtn {
+  margin-top: 10px;
+}
 .homePage .hero {
   background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
 }
@@ -281,7 +278,7 @@
 }
 .btn {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -289,25 +286,25 @@
   border: none;
 }
 .btn:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .btn:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 
 .btn-primary {
-  background-color: #999b80;
+  background-color: #87ac76;
 }
 
 .btn-accent {
-  background-color: #999b80;
+  background-color: #87ac76;
 }
 .btn-accent:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 
 .btn-secondary {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .btn-secondary:hover {
   background-color: rgba(252, 238, 234, 0.8509803922);
@@ -321,13 +318,13 @@
 /* 1. Mission Statement Section */
 /* ============================================== */
 .mission-statement {
-  padding: 60px 0;
+  padding: 60px 10px;
   text-align: center;
   background-color: #f8f8f8;
 }
 .mission-statement h2 {
   font-size: 2.5rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 20px;
 }
 .mission-statement .intro-text {
@@ -358,7 +355,7 @@
 }
 .program-overview h3 {
   font-size: 2rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 50px;
 }
 .program-overview .program-cards {
@@ -388,12 +385,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .program-overview .program-cards .card i {
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 20px;
 }
 .program-overview .program-cards .card h4 {
   font-size: 1.4rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 15px;
 }
 .program-overview .program-cards .card p {
@@ -403,7 +400,7 @@
   margin-bottom: 20px;
 }
 .program-overview .program-cards .card .card-link {
-  color: #999b80;
+  color: #87ac76;
   text-decoration: none;
   font-weight: 600;
 }
@@ -421,7 +418,7 @@
 /* ============================================== */
 .impact-metrics {
   padding: 40px 0;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-align: center;
 }
@@ -492,7 +489,7 @@
 }
 .call-to-action-block .cta-box h4 {
   font-size: 1.8rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 20px;
 }
 .call-to-action-block .cta-box p {
@@ -501,7 +498,7 @@
   margin-bottom: 30px;
 }
 .call-to-action-block \ .cta-box {
-  border-bottom: 5px solid #999b80;
+  border-bottom: 5px solid #87ac76;
 }
 
 .miniButtons {
@@ -548,12 +545,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .events-news .eventCards .card i {
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 20px;
 }
 .events-news .eventCards .card h4 {
   font-size: 1.4rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 15px;
 }
 .events-news .eventCards .card p {
@@ -563,7 +560,7 @@
   margin-bottom: 20px;
 }
 .events-news .eventCards .card .card-link {
-  color: #999b80;
+  color: #87ac76;
   text-decoration: none;
   font-weight: 600;
 }
@@ -587,7 +584,7 @@
 }
 .events-news h3 {
   font-size: 2rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 30px;
 }
 .events-news p {
@@ -625,15 +622,9 @@
   max-width: 1000px;
   padding: 25px;
 }
-.about-hero .heroColorOverlay .heroContent h1 {
-  margin-bottom: 0.8rem;
-}
-.about-hero .heroColorOverlay .heroContent p {
-  margin-bottom: 2rem;
-}
 .about-hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -641,10 +632,10 @@
   border: none;
 }
 .about-hero .heroColorOverlay .heroContent .heroBtn:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .about-hero .heroColorOverlay .heroContent .heroBtn:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .about-hero .heroColorOverlay .heroContent .tagline {
   text-align: center;
@@ -673,7 +664,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #999b80;
+  color: #87ac76;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -690,6 +681,9 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.narrative-section .purposeSection .text {
+  padding: 20px;
 }
 .narrative-section .purposeSection .imgHolder {
   max-width: 1200px;
@@ -726,8 +720,8 @@
   color: #555;
 }
 .narrative-section .narrative-subtitle {
-  color: #999b80;
-  border-left: 4px solid #999b80;
+  color: #87ac76;
+  border-left: 4px solid #87ac76;
   padding-left: 15px;
   margin-top: 35px;
   margin-bottom: 20px;
@@ -749,7 +743,7 @@
   text-align: center;
 }
 .inspiration-block h3 {
-  color: #999b80;
+  color: #87ac76;
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
@@ -760,14 +754,14 @@
 }
 .inspiration-block ul li {
   font-style: italic;
-  color: #999b80;
+  color: #87ac76;
   padding: 5px 0;
   font-size: 1.1rem;
   font-weight: bolder;
 }
 
 .meet-the-board {
-  background-color: #999b80;
+  background-color: #87ac76;
 }
 .meet-the-board .alt-color-title {
   color: white;
@@ -831,7 +825,7 @@
   background-color: white;
 }
 .foundation-section .mission-vision-grid .mission-vision-block h3 {
-  color: #999b80;
+  color: #87ac76;
   border-bottom: 2px solid #f9f9f9;
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -839,7 +833,7 @@
 
 /* --- Core Values Grid --- */
 h3 {
-  color: #999b80;
+  color: #87ac76;
   font-size: 30px;
 }
 
@@ -854,21 +848,21 @@ h3 {
   margin-bottom: 20px;
 }
 .values-grid .value-card {
-  width: 200px;
+  max-width: 200px;
   padding: 20px 10px;
   border: 1px solid #eee;
   background-color: white;
   border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 .values-grid .value-card i {
   font-size: 1.8rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 10px;
 }
 .values-grid .value-card h4 {
   font-size: 1.1rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 5px;
 }
 .values-grid .value-card p {
@@ -887,6 +881,9 @@ h3 {
   font-size: 30px;
   font-weight: bolder;
 }
+.helpOptions .or {
+  color: #87ac76;
+}
 .helpOptions .option {
   display: flex;
   align-items: center;
@@ -895,10 +892,11 @@ h3 {
   background-color: white;
   padding: 25px;
   border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 .helpOptions .option a {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -906,13 +904,14 @@ h3 {
   border: none;
 }
 .helpOptions .option a:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .helpOptions .option a:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .helpOptions .option h2 {
   margin-bottom: 25px;
+  color: #63463b;
 }
 
 .donateHolder {
@@ -957,15 +956,9 @@ h3 {
   max-width: 1000px;
   padding: 25px;
 }
-.programsPage .programs-hero .heroColorOverlay .heroContent h1 {
-  margin-bottom: 0.8rem;
-}
-.programsPage .programs-hero .heroColorOverlay .heroContent p {
-  margin-bottom: 2rem;
-}
 .programsPage .programs-hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -973,10 +966,10 @@ h3 {
   border: none;
 }
 .programsPage .programs-hero .heroColorOverlay .heroContent .heroBtn:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .programsPage .programs-hero .heroColorOverlay .heroContent .heroBtn:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .programsPage .programs-hero .heroColorOverlay .heroContent .tagline {
   text-align: center;
@@ -1001,6 +994,14 @@ h3 {
   background: url("../assets/img/programsHero.jpg") no-repeat center center/cover;
   height: 300px;
   width: 100%;
+}
+.programsPage h2 {
+  color: #63463b;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .programsPage .programGrid {
   padding: 20px;
@@ -1031,12 +1032,12 @@ h3 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .programsPage .programGrid .programCard i {
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 20px;
 }
 .programsPage .programGrid .programCard h4 {
   font-size: 1.4rem;
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 15px;
 }
 .programsPage .programGrid .programCard p {
@@ -1046,7 +1047,7 @@ h3 {
   margin-bottom: 20px;
 }
 .programsPage .programGrid .programCard .card-link {
-  color: #999b80;
+  color: #87ac76;
   text-decoration: none;
   font-weight: 600;
 }
@@ -1059,46 +1060,55 @@ h3 {
   margin-left: 10px;
 }
 .programsPage .programGrid .programCard {
-  padding: 20px;
-  min-width: 300px;
-  border-radius: 10px;
-  height: 30vh;
-  min-height: 250px;
-  max-height: 500px;
-  background-color: #c4c6a3;
+  position: relative;
+  min-width: 320px;
+  height: 420px;
+  padding: 0;
+  background: url("assets/img/program-thanksgiving.jpg") no-repeat center center/cover;
+  color: white;
+  display: block;
   margin-top: 25px;
   margin-bottom: 20px;
-  color: white;
+}
+.programsPage .programGrid .programClickable {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   flex-direction: column;
-}
-.programsPage .programGrid .programBtn {
-  padding: 15px 25px;
-  background-color: #999b80;
-  color: white;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  border: none;
+  border-radius: 10px;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%);
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
 }
-.programsPage .programGrid .programBtn:hover {
-  background-color: #c4c6a3;
+.programsPage .programGrid .programClickable:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0) 100%);
 }
-.programsPage .programGrid .programBtn:active {
-  background-color: #6e7043;
-}
-.programsPage .programGrid .programBtn {
-  background-color: white;
-  color: #6e7043;
-}
-.programsPage .programGrid .programBtn:hover {
-  background-color: #999b80;
-}
-.programsPage .programGrid .programBtn:active {
-  background-color: #6e7043;
+.programsPage .programGrid .programClickable .programTitle {
   color: white;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.programsPage .programGrid .programClickable .programDesc {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.programsPage .programGrid .thanksgiving, .programsPage .programGrid .leanna, .programsPage .programGrid .chrf, .programsPage .programGrid .kindnessRipple {
+  background: url("../assets/img/logo.png") no-repeat center center/cover;
+}
+.programsPage .programGrid .thanksgiving {
+  background: url("../assets/img/thanksgivingCover.jpg") no-repeat center center/cover;
+}
+.programsPage .programGrid .kindnessRipple {
+  background: url("../assets/img/kindnessRippleCover.jpg") no-repeat center center/cover;
+}
+.programsPage .programGrid .chrf {
+  background: url("../assets/img/chrfCover.jpg") no-repeat center center/cover;
 }
 
 @media (max-width: 850px) {
@@ -1106,6 +1116,73 @@ h3 {
     flex-direction: column;
   }
 }
+.programPage {
+  background-color: #fcfcfc;
+}
+.programPage .pageContent {
+  padding: 20px;
+  margin-top: -20px;
+  display: fl;
+}
+.programPage .pageContent .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.programPage .pageContent .programDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.programPage .pageContent .programDetails .programStats {
+  padding: 20px;
+  background-color: #87ac76;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.programPage .pageContent .programDetails .programStats h3 {
+  color: white;
+}
+.programPage .pageContent .programDetails .programStats ul {
+  list-style-type: none;
+}
+.programPage .pageContent .programDetails .programStats ul li {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.programPage .pageContent .programDetails .programStats ul li .metricTitle {
+  font-weight: bold;
+}
+.programPage .pageContent .programDetails .programStats ul li .metric {
+  font-style: italic;
+}
+@media (max-width: 1000px) {
+  .programPage .pageContent .programDetails {
+    flex-direction: column;
+  }
+  .programPage .pageContent .programDetails .programStats {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .programPage .pageContent .programDetails .programStats .metricList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .programPage .pageContent .programDetails .programStats .metricList .wholeMetric {
+    padding: 20px;
+  }
+}
+
 .donatePage {
   margin: 40px 0px;
   background-color: #fcfcfc;
@@ -1133,15 +1210,9 @@ h3 {
   max-width: 1000px;
   padding: 25px;
 }
-.donatePage .donate-hero .heroColorOverlay .heroContent h1 {
-  margin-bottom: 0.8rem;
-}
-.donatePage .donate-hero .heroColorOverlay .heroContent p {
-  margin-bottom: 2rem;
-}
 .donatePage .donate-hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1149,10 +1220,10 @@ h3 {
   border: none;
 }
 .donatePage .donate-hero .heroColorOverlay .heroContent .heroBtn:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .donatePage .donate-hero .heroColorOverlay .heroContent .heroBtn:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .donatePage .donate-hero .heroColorOverlay .heroContent .tagline {
   text-align: center;
@@ -1178,11 +1249,123 @@ h3 {
   height: 300px;
   width: 100%;
 }
-.donatePage .donate-hero .heroContent {
-  margin-top: 20px;
-}
 .donatePage .donate-hero .heroContent h1 {
   color: white;
+}
+.donatePage .donateHolder .disclaimer {
+  background-color: #87ac76;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+  font-size: 2vmin;
+}
+.donatePage .donateHolder .disclaimer h3 {
+  color: white;
+  font-size: 4vmin;
+}
+.donatePage .donateHolder .disclaimer a {
+  color: rgba(252, 238, 234, 0.8509803922);
+  transition: color 0.15s ease-in-out;
+}
+.donatePage .donateHolder .disclaimer a:hover {
+  color: #63463b;
+}
+.donatePage .donateHolder .donateOptions {
+  margin: 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 80%;
+}
+.donatePage .donateHolder .donateOptions .option {
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 350px;
+  width: 40%;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.donatePage .donateHolder .donateOptions .option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.donatePage .donateHolder .donateOptions .option i {
+  color: #87ac76;
+  margin-bottom: 20px;
+}
+.donatePage .donateHolder .donateOptions .option h4 {
+  font-size: 1.4rem;
+  color: #87ac76;
+  margin-bottom: 15px;
+}
+.donatePage .donateHolder .donateOptions .option p {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.donatePage .donateHolder .donateOptions .option .card-link {
+  color: #87ac76;
+  text-decoration: none;
+  font-weight: 600;
+}
+.donatePage .donateHolder .donateOptions .option .card-link i {
+  font-size: 0.9em;
+  margin-left: 5px;
+  transition: margin-left 0.3s ease;
+}
+.donatePage .donateHolder .donateOptions .option .card-link:hover i {
+  margin-left: 10px;
+}
+.donatePage .donateHolder .donateOptions .option {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
+  min-width: 300px;
+}
+.donatePage .donateHolder .donateOptions .option img {
+  max-width: 200px;
+  border-radius: 20px;
+}
+.donatePage .donateHolder .donateOptions .option h2 {
+  color: #87ac76;
+}
+.donatePage .donateHolder .donateOptions .option a {
+  padding: 15px 25px;
+  background-color: #87ac76;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+}
+.donatePage .donateHolder .donateOptions .option a:hover {
+  background-color: #a4d892;
+}
+.donatePage .donateHolder .donateOptions .option a:active {
+  background-color: #437046;
+}
+.donatePage .donateHolder .donateOptions .option a {
+  margin-bottom: 30px;
+}
+.donatePage .donateHolder .donateOptions .option {
+  margin-bottom: 10px;
 }
 
 .contact-page {
@@ -1196,7 +1379,7 @@ h3 {
 }
 .contact-page .contact-header h2 {
   font-size: 2.5rem;
-  color: #999b80;
+  color: #87ac76;
 }
 .contact-page .contact-header p {
   font-size: 1.1rem;
@@ -1225,7 +1408,7 @@ h3 {
   margin: 0 auto;
 }
 .contact-page .contact-form-wrapper h3 {
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 25px;
 }
 .contact-page .form-group {
@@ -1250,7 +1433,7 @@ h3 {
 .contact-page .form-group input[type=text]:focus,
 .contact-page .form-group input[type=email]:focus,
 .contact-page .form-group textarea:focus {
-  border-color: #999b80;
+  border-color: #87ac76;
   outline: none;
 }
 .contact-page .form-group textarea {
@@ -1258,7 +1441,7 @@ h3 {
 }
 .contact-page .btn-submit {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1266,10 +1449,10 @@ h3 {
   border: none;
 }
 .contact-page .btn-submit:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .contact-page .btn-submit:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .contact-page .btn-submit {
   width: 100%;
@@ -1280,9 +1463,9 @@ h3 {
   margin: 0 auto;
 }
 .contact-page .contact-info h3 {
-  color: #999b80;
+  color: #87ac76;
   margin-bottom: 30px;
-  border-bottom: 2px solid #999b80;
+  border-bottom: 2px solid #87ac76;
   padding-bottom: 10px;
 }
 .contact-page .contact-info .info-block {
@@ -1293,14 +1476,14 @@ h3 {
 }
 .contact-page .contact-info .info-block i {
   font-size: 1.5rem;
-  color: #999b80;
+  color: #87ac76;
   margin-right: 15px;
   width: 30px;
   text-align: center;
 }
 .contact-page .contact-info .info-block h4 {
   font-size: 1rem;
-  color: #999b80;
+  color: #87ac76;
   margin: 0;
 }
 .contact-page .contact-info .info-block p {
@@ -1314,7 +1497,7 @@ h3 {
   transition: all 0.2s ease-in-out;
 }
 .contact-page .contact-info .info-block a:hover {
-  color: #999b80;
+  color: #87ac76;
 }
 
 @media (max-width: 500px) {
@@ -1380,11 +1563,11 @@ h3 {
   transition: color 0.3s ease;
 }
 .footer .footerBtn:hover {
-  color: #999b80;
+  color: #87ac76;
 }
 .footer .docsButton {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1392,10 +1575,10 @@ h3 {
   border: none;
 }
 .footer .docsButton:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .footer .docsButton:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .footer .docsButton {
   background-color: transparent;
@@ -1407,8 +1590,8 @@ h3 {
   text-decoration: none;
 }
 .footer .docsButton:hover {
-  background-color: #999b80;
-  border-color: #999b80;
+  background-color: #87ac76;
+  border-color: #87ac76;
 }
 .footer .devCallout {
   margin-top: 15px;
@@ -1421,21 +1604,24 @@ h3 {
   }
 }
 .footer .devCallout a {
-  color: white;
+  color: rgba(252, 238, 234, 0.8509803922);
   transition: color 0.3s;
   font-size: 1rem;
 }
 .footer .devCallout a:hover {
-  color: #999b80;
+  color: #6ccd6c;
   text-decoration: underline;
+}
+.footer .devCallout .code:hover {
+  color: rgb(94, 184, 222);
+}
+.footer .devCallout .heart:hover {
+  color: rgb(237, 75, 75);
 }
 .footer .devCallout i {
   color: rgba(252, 238, 234, 0.8509803922);
   margin: 0 2px;
   transition: color 0.3s;
-}
-.footer .devCallout i:hover {
-  color: #999b80;
 }
 
 .documents-page {
@@ -1451,7 +1637,7 @@ h3 {
 }
 .documents-page .document-header h2 {
   font-size: 2.5rem;
-  color: #999b80;
+  color: #87ac76;
 }
 .documents-page .document-header p {
   font-size: 1.1rem;
@@ -1466,7 +1652,7 @@ h3 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 .documents-page .list-heading {
-  color: #999b80;
+  color: #87ac76;
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -1489,13 +1675,13 @@ h3 {
 }
 .documents-page .document-list li i {
   font-size: 1.2rem;
-  color: #999b80;
+  color: #87ac76;
   margin-right: 15px;
   flex-shrink: 0;
 }
 .documents-page .document-list li a {
   flex-grow: 1;
-  color: #999b80;
+  color: #87ac76;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -1522,7 +1708,7 @@ h3 {
   margin-top: 50px;
   padding: 30px;
   text-align: center;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   border-radius: 10px;
   width: 80%;
@@ -1539,7 +1725,7 @@ h3 {
 }
 .documents-page .annual-reports-placeholder .btn-secondary {
   padding: 15px 25px;
-  background-color: #999b80;
+  background-color: #87ac76;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1547,17 +1733,17 @@ h3 {
   border: none;
 }
 .documents-page .annual-reports-placeholder .btn-secondary:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
 }
 .documents-page .annual-reports-placeholder .btn-secondary:active {
-  background-color: #6e7043;
+  background-color: #437046;
 }
 .documents-page .annual-reports-placeholder .btn-secondary {
   background-color: white;
-  color: #999b80;
+  color: #87ac76;
 }
 .documents-page .annual-reports-placeholder .btn-secondary:hover {
-  background-color: #c4c6a3;
+  background-color: #a4d892;
   color: white;
 }
 

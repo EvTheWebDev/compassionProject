@@ -8,6 +8,10 @@ $sitePrimary: #999b80;
 $siteLightPrimary: #c4c6a3;
 $siteDarkPrimary: #6e7043;
 
+$sitePrimary: #87ac76;
+$siteLightPrimary: #a4d892;
+$siteDarkPrimary: #437046;
+
 // Brown Color Palette
 // $sitePrimary: #a8867f;
 // $siteLightPrimary: #caaba3;
@@ -115,16 +119,6 @@ $bg1: #fcfcfc;
       color: white;
       max-width: 1000px;
       padding: 25px;
-
-      h1 {
-        // font-size: 3rem;
-        margin-bottom: 0.8rem;
-      }
-
-      p {
-        // font-size: 1.2rem;
-        margin-bottom: 2rem;
-      }
 
       .heroBtn {
         @include siteBtn;

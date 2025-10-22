@@ -1,184 +1,104 @@
-// @use "vars";
-// .footer {
-//   background-color: vars.$siteBrown;
-//   padding: 20px 0;
-//   text-align: center;
-//   font-size: 18px;
-//   color: vars.$siteLight;
-
-//   .buttonsHolder {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-evenly;
-//     .docsButton {
-//       @include vars.siteBtn;
-//       font-size: 15px;
-//       margin-bottom: 20px;
-//       margin-top: 20px;
-//       background-color: white;
-//       color: vars.$siteGray;
-//       &:hover {
-//         color: white;
-//       }
-//     }
-//     .socialButtons {
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
-//       width: 40%;
-//       max-width: 300px;
-//       .footerBtn {
-//         @include vars.siteBtn;
-//         background-color: vars.$siteLightGray;
-//         color: vars.$sitePrimary;
-//         i {
-//           font-size: 1.3rem;
-//           color: vars.$siteGray;
-//         }
-//         &:hover {
-//           i {
-//             color: white;
-//           }
-//         }
-//       }
-//     }
-//   }
-//   a {
-//     color: vars.$siteLight;
-//     font-size: 14px;
-//     &:hover {
-//       color: vars.$siteLightPrimary;
-//     }
-//   }
-//   .docsHolder {
-//     font-size: 1.2rem;
-//     margin-bottom: 30px;
-//   }
-//   .devCallout {
-//     margin-top: 25px;
-//     font-size: 1rem;
-//     a {
-//       font-size: 1rem;
-//     }
-//   }
-// }
-
-// @media (max-width: 600px) {
-//     .buttonsHolder {
-//         flex-direction: column;
-//         margin-bottom: -10px;
-//         .socialButtons {
-//             margin-bottom: 10px;
-//         }
-//     }
-// }
-
-
-
-@use 'vars'; 
-
-// Define a dark color derived from your $sitePrimary for the background
-
+@use "vars";
 
 .footer {
-    // 1. Footer Container Layout: Stacks content vertically (column)
-    background-color: vars.$siteBrown; 
-    color: white; 
-    padding: 30px 20px;
-    
+  background-color: vars.$siteBrown;
+  color: white;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+
+  @media (min-width: 768px) {
+    padding: 30px 50px;
+  }
+
+  p:first-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .buttonsHolder {
     display: flex;
-    flex-direction: column; // 🔑 KEY: Always keep it a column
-    align-items: center; // Center content horizontally
-    text-align: center;
-    gap: 15px; // Add some vertical spacing between main blocks
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
-    // Desktop: No changes to flex-direction, just adjust padding
     @media (min-width: 768px) {
-        padding: 30px 50px;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
+  .socialButtons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footerBtn {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: vars.$sitePrimary;
+    }
+  }
+
+  .docsButton {
+    @include vars.siteBtn;
+
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      background-color: vars.$sitePrimary;
+      border-color: vars.$sitePrimary;
+    }
+  }
+
+  .devCallout {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+
+    @media (min-width: 768px) {
+      margin-top: 15px;
     }
 
-    // --- Organization Name ---
-    p:first-child {
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 10px;
+    a {
+      color: vars.$siteLight;
+      transition: color 0.3s;
+      font-size: 1rem;
+
+      &:hover {
+        color: #6ccd6c;
+        text-decoration: underline;
+      }
+    }
+    .code {
+      &:hover {
+        color: rgb(94, 184, 222);
+      }
+    }
+    .heart {
+      &:hover {
+        color: rgb(237, 75, 75);
+      }
     }
 
-    // --- Button Group Holder ---
-    .buttonsHolder {
-        display: flex;
-        flex-direction: column; // 🔑 KEY: Always keep sub-items stacked too
-        align-items: center;
-        gap: 15px; // Vertical space between social buttons and document link
-
-        @media (min-width: 768px) {
-            flex-direction: row; // Keep the social icons and docs button side-by-side
-            gap: 30px; 
-        }
+    i {
+      color: vars.$siteLight;
+      margin: 0 2px;
+      transition: color 0.3s;
     }
-    
-    // --- Social Icons ---
-    .socialButtons {
-        display: flex;
-        gap: 15px; 
-    }
-
-    .footerBtn {
-        font-size: 1.5rem; 
-        color: white; 
-        transition: color 0.3s ease;
-        
-        &:hover {
-            color: vars.$sitePrimary; 
-        }
-    }
-    
-    // --- View Our Documents Button (DocsButton) ---
-    .docsButton {
-        @include vars.siteBtn; 
-        
-        background-color: transparent; 
-        color: white;
-        border: 2px solid white;
-        padding: 8px 15px;
-        font-weight: 500;
-        transition: background-color 0.3s, border-color 0.3s;
-        text-decoration: none;
-        
-        &:hover {
-            background-color: vars.$sitePrimary; 
-            border-color: vars.$sitePrimary;
-        }
-    }
-
-    // --- Developer Callout ---
-    .devCallout {
-        margin-top: 15px; // Ensure proper vertical spacing
-        font-size: 0.85rem;
-        color: rgba(255, 255, 255, 0.7); 
-
-        @media (min-width: 768px) {
-            margin-top: 15px; // Keep spacing consistent
-        }
-
-        a {
-            color: white;
-            transition: color 0.3s;
-            font-size: 1rem;
-
-            &:hover {
-                color: vars.$sitePrimary;
-                text-decoration: underline;
-            }
-        }
-        
-        i {
-            color: vars.$siteLight;
-            margin: 0 2px;
-            transition: color 0.3s;
-            &:hover {
-                color: vars.$sitePrimary;
-            }
-        }
-    }
+  }
 }
