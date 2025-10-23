@@ -1144,11 +1144,46 @@ h3 {
   justify-content: space-evenly;
   flex-direction: column;
   margin-bottom: 20px;
+  color: #63463b;
 }
 .programPage .pageContent .programDetails {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+}
+.programPage .pageContent .programDetails ul,
+.programPage .pageContent .programDetails ol {
+  margin-left: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.programPage .pageContent .programDetails ul li,
+.programPage .pageContent .programDetails ol li {
+  margin-bottom: 10px;
+}
+.programPage .pageContent .programDetails .leftRight {
+  display: flex;
+  justify-content: space-evenly;
+}
+.programPage .pageContent .programDetails .leftRight section {
+  padding: 20px;
+}
+.programPage .pageContent .programDetails .leftRight .left,
+.programPage .pageContent .programDetails .leftRight .right {
+  width: 50%;
+}
+.programPage .pageContent .programDetails .leftRight .programImg {
+  width: 150px;
+}
+@media (max-width: 1000px) {
+  .programPage .pageContent .programDetails .leftRight {
+    flex-direction: column;
+  }
+  .programPage .pageContent .programDetails .leftRight .left,
+  .programPage .pageContent .programDetails .leftRight .right {
+    width: 100%;
+  }
 }
 .programPage .pageContent .programDetails .programDesc .imgTextHolder {
   display: flex;
