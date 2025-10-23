@@ -1124,6 +1124,9 @@ h3 {
 .programsPage .programGrid .chrf {
   background: url("../assets/img/chrfCover.jpg") no-repeat center center/cover;
 }
+.programsPage .programGrid .leanna {
+  background: url("../assets//img/LLFCover.jpg") no-repeat center center/cover;
+}
 
 @media (max-width: 850px) {
   .programsPage .programGrid {

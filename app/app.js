@@ -14,6 +14,7 @@ function changeRoute() {
       $("#app").html(data);
     });
   }
+  window.scrollTo(0, 0);
   // Bottom of changeRoute
 }
 
