@@ -41,7 +41,7 @@
       max-width: 1200px;
       min-width: 250px;
       margin: 20px auto;
-      text-align: center; 
+      text-align: center;
       img {
         max-width: 100%;
 
@@ -62,7 +62,7 @@
   }
   @media (max-width: 950px) {
     .purposeSection {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
 
@@ -146,6 +146,24 @@
       flex-direction: column;
       margin-top: 20px;
       padding: 20px;
+      text-align: center;
+
+      .pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  img {
+    background-position: 5vh;
+  }
+}
+
+      .memberPic {
+        
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
 
       h3,
       h4 {
@@ -155,12 +173,6 @@
         justify-content: space-evenly;
       }
       h4 {
-        margin-bottom: 20px;
-      }
-
-      .boardMemberPic {
-        width: 150px;
-        border-radius: 100%;
         margin-bottom: 20px;
       }
     }
@@ -264,8 +276,7 @@ h3 {
     background-color: white;
     padding: 25px;
     border-radius: 5px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 
     a {
       @include vars.siteBtn;
@@ -293,3 +304,4 @@ h3 {
     }
   }
 }
+

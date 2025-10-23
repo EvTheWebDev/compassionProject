@@ -782,6 +782,21 @@
   flex-direction: column;
   margin-top: 20px;
   padding: 20px;
+  text-align: center;
+}
+.meet-the-board .boardMembers .member .pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.meet-the-board .boardMembers .member .pic img {
+  background-position: 5vh;
+}
+.meet-the-board .boardMembers .member .memberPic {
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 .meet-the-board .boardMembers .member h3,
 .meet-the-board .boardMembers .member h4 {
@@ -791,11 +806,6 @@
   justify-content: space-evenly;
 }
 .meet-the-board .boardMembers .member h4 {
-  margin-bottom: 20px;
-}
-.meet-the-board .boardMembers .member .boardMemberPic {
-  width: 150px;
-  border-radius: 100%;
   margin-bottom: 20px;
 }
 
@@ -995,13 +1005,14 @@ h3 {
   height: 300px;
   width: 100%;
 }
-.programsPage h2 {
+.programsPage .clickText {
   color: #63463b;
-  margin-top: 20px;
-  margin-bottom: -10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 2vmax;
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 .programsPage .programGrid {
   padding: 20px;
@@ -1098,7 +1109,10 @@ h3 {
   line-height: 1.4;
   margin-bottom: 10px;
 }
-.programsPage .programGrid .thanksgiving, .programsPage .programGrid .leanna, .programsPage .programGrid .chrf, .programsPage .programGrid .kindnessRipple {
+.programsPage .programGrid .thanksgiving,
+.programsPage .programGrid .leanna,
+.programsPage .programGrid .chrf,
+.programsPage .programGrid .kindnessRipple {
   background: url("../assets/img/logo.png") no-repeat center center/cover;
 }
 .programsPage .programGrid .thanksgiving {
@@ -1135,6 +1149,28 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.programPage .pageContent .programDetails .programDesc .imgTextHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.programPage .pageContent .programDetails .programDesc .imgTextHolder .descText {
+  margin-right: 20px;
+}
+.programPage .pageContent .programDetails .programDesc .imgTextHolder .descImg img {
+  border-radius: 20px;
+  width: 20vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
+}
+@media (max-width: 800px) {
+  .programPage .pageContent .programDetails .imgTextHolder {
+    flex-direction: column;
+  }
+  .programPage .pageContent .programDetails .imgTextHolder .descImg {
+    margin: 20px 0px;
+  }
 }
 .programPage .pageContent .programDetails .programStats {
   padding: 20px;
