@@ -7,7 +7,7 @@ function changeRoute() {
 
   if (pageID != "") {
     $.get(`pages/${pageID}.html`, function (data) {
-      console.log("data " + data);
+      // console.log("data " + data);
       $("#app").html(data);
     });
   } else {
@@ -16,7 +16,9 @@ function changeRoute() {
       $("#app").html(data);
     });
   }
-  window.scrollTo(0, 0);
+  setTimeout(() => {
+      window.scrollTo(0, 0); 
+  }, 100);
   // Bottom of changeRoute
 }
 

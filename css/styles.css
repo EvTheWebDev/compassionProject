@@ -226,6 +226,9 @@
   color: white;
   max-width: 1000px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .homePage .hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
@@ -235,6 +238,7 @@
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .homePage .hero .heroColorOverlay .heroContent .heroBtn:hover {
   background-color: #a4d892;
@@ -265,7 +269,7 @@
   font-size: 3rem;
 }
 .homePage .hero .heroBtn {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .homePage .hero {
   background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
@@ -284,6 +288,7 @@
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #a4d892;
@@ -380,6 +385,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.program-overview .program-cards .card .title a {
+  text-decoration: none;
+}
 .program-overview .program-cards .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -411,6 +419,9 @@
 }
 .program-overview .program-cards .card .card-link:hover i {
   margin-left: 10px;
+}
+.program-overview .program-cards .card a {
+  text-decoration: none;
 }
 
 /* ============================================== */
@@ -540,6 +551,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.events-news .eventCards .card .title a {
+  text-decoration: none;
+}
 .events-news .eventCards .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -573,8 +587,15 @@
   margin-left: 10px;
 }
 .events-news .eventCards .card {
-  width: 75%;
   max-width: 800px;
+}
+.events-news .eventCards .card img {
+  max-height: 400px;
+  max-height: 400px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 .events-news .eventCards .card ul, .events-news .eventCards .card ol {
   margin: 0 auto;
@@ -621,6 +642,9 @@
   color: white;
   max-width: 1000px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
@@ -630,6 +654,7 @@
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .about-hero .heroColorOverlay .heroContent .heroBtn:hover {
   background-color: #a4d892;
@@ -728,7 +753,7 @@
   font-size: 1.8rem;
 }
 .narrative-section .current-mission {
-  background-color: #e9eff5;
+  background-color: rgba(191, 233, 189, 0.5333333333);
   border-radius: 8px;
   padding: 20px;
   margin-top: 30px;
@@ -912,6 +937,7 @@ h3 {
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .helpOptions .option a:hover {
   background-color: #a4d892;
@@ -965,6 +991,9 @@ h3 {
   color: white;
   max-width: 1000px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .programsPage .programs-hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
@@ -974,6 +1003,7 @@ h3 {
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .programsPage .programs-hero .heroColorOverlay .heroContent .heroBtn:hover {
   background-color: #a4d892;
@@ -1010,7 +1040,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 2vmax;
+  font-size: 1.3rem;
   margin-top: 20px;
   margin-bottom: -20px;
 }
@@ -1037,6 +1067,9 @@ h3 {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.programsPage .programGrid .programCard .title a {
+  text-decoration: none;
 }
 .programsPage .programGrid .programCard:hover {
   transform: translateY(-5px);
@@ -1090,12 +1123,12 @@ h3 {
   text-decoration: none;
   border-radius: 10px;
   z-index: 1;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(38, 23, 18, 0.9) 0%, rgba(38, 23, 18, 0.6) 60%, rgba(38, 23, 18, 0) 100%);
   padding: 20px;
   transition: all 0.2s ease-in-out;
 }
 .programsPage .programGrid .programClickable:hover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(38, 23, 18, 0.8) 0%, rgba(38, 23, 18, 0.4) 70%, rgba(38, 23, 18, 0) 100%);
 }
 .programsPage .programGrid .programClickable .programTitle {
   color: white;
@@ -1127,6 +1160,9 @@ h3 {
 .programsPage .programGrid .leanna {
   background: url("../assets//img/LLFCover.jpg") no-repeat center center/cover;
 }
+.programsPage .programGrid .rootedRelief {
+  background: url("../assets/img/rootedReliefCover.jpg") no-repeat center center/cover;
+}
 
 @media (max-width: 850px) {
   .programsPage .programGrid {
@@ -1139,7 +1175,7 @@ h3 {
 .programPage .pageContent {
   padding: 20px;
   margin-top: -20px;
-  display: fl;
+  padding-bottom: 50px;
 }
 .programPage .pageContent .header {
   display: flex;
@@ -1167,25 +1203,108 @@ h3 {
 }
 .programPage .pageContent .programDetails .leftRight {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 .programPage .pageContent .programDetails .leftRight section {
   padding: 20px;
 }
 .programPage .pageContent .programDetails .leftRight .left,
 .programPage .pageContent .programDetails .leftRight .right {
-  width: 50%;
+  width: 48%;
 }
 .programPage .pageContent .programDetails .leftRight .programImg {
   width: 150px;
+}
+.programPage .pageContent .programDetails .center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.programPage .pageContent .programDetails .donateText {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.programPage .pageContent .programDetails .donateCard {
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 350px;
+  width: 40%;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.programPage .pageContent .programDetails .donateCard .title a {
+  text-decoration: none;
+}
+.programPage .pageContent .programDetails .donateCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.programPage .pageContent .programDetails .donateCard i {
+  color: #87ac76;
+  margin-bottom: 20px;
+}
+.programPage .pageContent .programDetails .donateCard h4 {
+  font-size: 1.4rem;
+  color: #87ac76;
+  margin-bottom: 15px;
+}
+.programPage .pageContent .programDetails .donateCard p {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.programPage .pageContent .programDetails .donateCard .card-link {
+  color: #87ac76;
+  text-decoration: none;
+  font-weight: 600;
+}
+.programPage .pageContent .programDetails .donateCard .card-link i {
+  font-size: 0.9em;
+  margin-left: 5px;
+  transition: margin-left 0.3s ease;
+}
+.programPage .pageContent .programDetails .donateCard .card-link:hover i {
+  margin-left: 10px;
+}
+.programPage .pageContent .programDetails .donateCard {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.programPage .pageContent .programDetails .paypalContainer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.programPage .pageContent .programDetails .paypalContainer h3 {
+  display: none;
+}
+.programPage .pageContent .programDetails .paypalContainer label {
+  font-weight: bold;
+  margin-right: 10px;
 }
 @media (max-width: 1000px) {
   .programPage .pageContent .programDetails .leftRight {
     flex-direction: column;
   }
+  .programPage .pageContent .programDetails .leftRight section {
+    padding: 10px;
+  }
   .programPage .pageContent .programDetails .leftRight .left,
   .programPage .pageContent .programDetails .leftRight .right {
     width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
   }
 }
 .programPage .pageContent .programDetails .programDesc .imgTextHolder {
@@ -1257,6 +1376,31 @@ h3 {
   }
 }
 
+.donateCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.specialCard {
+  color: white;
+}
+.specialCard h3 {
+  color: white;
+}
+.specialCard {
+  padding: 20px;
+  background-color: #87ac76;
+  border-radius: 25px;
+  height: fit-content;
+  margin-top: 25px;
+}
+
+.goalList {
+  list-style-type: disc !important;
+}
+
 .donatePage {
   margin: 40px 0px;
   background-color: #fcfcfc;
@@ -1283,6 +1427,9 @@ h3 {
   color: white;
   max-width: 1000px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .donatePage .donate-hero .heroColorOverlay .heroContent .heroBtn {
   padding: 15px 25px;
@@ -1292,6 +1439,7 @@ h3 {
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .donatePage .donate-hero .heroColorOverlay .heroContent .heroBtn:hover {
   background-color: #a4d892;
@@ -1371,6 +1519,9 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.donatePage .donateHolder .donateOptions .option .title a {
+  text-decoration: none;
+}
 .donatePage .donateHolder .donateOptions .option:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -1428,6 +1579,7 @@ h3 {
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .donatePage .donateHolder .donateOptions .option a:hover {
   background-color: #a4d892;
@@ -1445,6 +1597,7 @@ h3 {
 .contact-page {
   padding: 80px 0;
   background-color: #f7f7f7;
+  min-height: 650px;
 }
 .contact-page .contact-header {
   text-align: center;
@@ -1521,6 +1674,7 @@ h3 {
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .contact-page .btn-submit:hover {
   background-color: #a4d892;
@@ -1647,6 +1801,7 @@ h3 {
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .footer .docsButton:hover {
   background-color: #a4d892;
@@ -1805,6 +1960,7 @@ h3 {
   border-radius: 5px;
   transition: background-color 0.3s;
   border: none;
+  cursor: pointer;
 }
 .documents-page .annual-reports-placeholder .btn-secondary:hover {
   background-color: #a4d892;

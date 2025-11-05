@@ -11,7 +11,7 @@
     font-size: 3rem;
   }
   .heroBtn {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   background: url("../assets/img/skyline.jpeg") no-repeat center center/cover;
  }
@@ -107,6 +107,9 @@
 
     .card {
       @include vars.siteCard;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -235,8 +238,16 @@
     margin: 0 auto;
    .card {
     @include vars.siteCard;
-    width: 75%;
+    // width: 75%;
     max-width: 800px;
+    img {
+      max-height: 400px;
+      max-height: 400px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
     ul, ol {
       margin: 0 auto;
       margin-bottom: 20px;

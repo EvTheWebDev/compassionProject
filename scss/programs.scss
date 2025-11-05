@@ -14,7 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 2vmax;
+    font-size: 1.3rem;
+    
     margin-top: 20px;
     margin-bottom: -20px;
   }
@@ -67,9 +68,9 @@
       // Translucent gradient overlay for text readability
       background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.6) 60%,
-        rgba(0, 0, 0, 0) 100%
+        rgba(38, 23, 18, 0.9) 0%,
+        rgba(38, 23, 18, 0.6) 60%,
+        rgba(38, 23, 18, 0) 100%
       );
 
       padding: 20px;
@@ -79,9 +80,9 @@
         // Slightly lighten the overlay on hover
         background: linear-gradient(
           0deg,
-          rgba(0, 0, 0, 0.8) 0%,
-          rgba(0, 0, 0, 0.4) 70%,
-          rgba(0, 0, 0, 0) 100%
+          rgba(38, 23, 18, 0.8) 0%,
+          rgba(38, 23, 18, 0.4) 70%,
+          rgba(38, 23, 18, 0) 100%
         );
       }
 
@@ -118,7 +119,12 @@
         center/cover;
     }
     .leanna {
-      background: url("../assets//img/LLFCover.jpg") no-repeat center center/cover;
+      background: url("../assets//img/LLFCover.jpg") no-repeat center
+        center/cover;
+    }
+    .rootedRelief {
+      background: url("../assets/img/rootedReliefCover.jpg") no-repeat center
+        center/cover;
     }
   }
 }
@@ -139,7 +145,7 @@
   .pageContent {
     padding: 20px;
     margin-top: -20px;
-    display: fl;
+    padding-bottom: 50px;
 
     .header {
       display: flex;
@@ -166,25 +172,61 @@
 
       .leftRight {
         display: flex;
-        // align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin-bottom: 50px;
         section {
           padding: 20px;
         }
         .left,
         .right {
-          width: 50%;
+          width: 48%;
         }
         .programImg {
           width: 150px;
         }
       }
+
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .donateText {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
+      .donateCard {
+        @include vars.siteCard;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      .paypalContainer {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        h3 {
+          display: none;
+        }
+        label {
+          font-weight: bold;
+          margin-right: 10px;
+        }
+      }
+
       @media (max-width: 1000px) {
         .leftRight {
           flex-direction: column;
+          section {
+            padding: 10px;
+          }
           .left,
           .right {
             width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
           }
         }
       }
@@ -262,4 +304,29 @@
       }
     }
   }
+}
+
+// Thanksgiving Program Specific Styles
+.donateCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+// Kindness Ripple Styles
+
+.specialCard {
+  color: white;
+  h3 {
+    color: white;
+  }
+  padding: 20px;
+  background-color: vars.$sitePrimary;
+  border-radius: 25px;
+  height: fit-content;
+  margin-top: 25px;
+}
+.goalList {
+  list-style-type: disc !important;
 }
