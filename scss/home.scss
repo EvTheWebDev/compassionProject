@@ -211,7 +211,6 @@
     border-bottom: 5px solid vars.$sitePrimary; // A bottom border accent
   }
 }
-
 .miniButtons {
   display: flex;
   align-items: center;
@@ -222,8 +221,9 @@
   }
 }
 
+
 /* ============================================== */
-/* Optional: Events & News Section */
+/* 5. Events & News Block */
 /* ============================================== */
 .events-news {
   padding: 60px 0;
@@ -232,21 +232,25 @@
 
   .eventCards {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-evenly;
-    max-width: 1200px;
+    flex-wrap: wrap;
     margin: 0 auto;
    .card {
     @include vars.siteCard;
-    // width: 75%;
-    max-width: 800px;
+    max-width: 400px;
+    margin-bottom: 30px;
+    &:hover {
+      cursor: pointer;
+    }
     img {
-      max-height: 400px;
-      max-height: 400px;
+      max-height: 200px;
+      max-height: 200px;
       max-width: 100%;
       display: block;
       margin: 0 auto;
       object-fit: contain;
+      margin-bottom: 20px;
     }
     ul, ol {
       margin: 0 auto;
@@ -270,4 +274,3 @@
     margin-bottom: 40px;
   }
 }
-

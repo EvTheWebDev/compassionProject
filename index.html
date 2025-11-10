@@ -14,7 +14,18 @@
       referrerpolicy="no-referrer"
     />
     <!-- PayPal Imports -->
-     <script src="https://www.paypal.com/sdk/js?client-id=BAA54TLsDDI8JDM0AoxRDEvdAPUJ2jDafcp75nWdEcw2osIyBIE8D8e7QCKsEzPoiqkVz5Ymcu-oagJ3Bw&components=hosted-buttons&enable-funding=venmo&currency=USD"> </script>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAA54TLsDDI8JDM0AoxRDEvdAPUJ2jDafcp75nWdEcw2osIyBIE8D8e7QCKsEzPoiqkVz5Ymcu-oagJ3Bw&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+
+    <!-- Firebase Imports -->
+    <script
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"
+      type="module"
+    ></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"
+      type="module"
+    ></script>
   </head>
   <body>
     <div class="nav">
@@ -38,7 +49,9 @@
           </a>
           <ul class="dropdown-menu">
             <li><a href="#programs">View All Programs</a></li>
-            <li><a href="#programs/thanksgivingMeals">Thanksgiving Meals</a></li>
+            <li>
+              <a href="#programs/thanksgivingMeals">Thanksgiving Meals</a>
+            </li>
             <li><a href="#programs/kindnessRipple">Kindness Ripple</a></li>
             <li><a href="#programs/chrf">Hardship Relief</a></li>
             <li><a href="#programs/leannaLegacy">Leanna's Legacy Fund</a></li>
@@ -65,36 +78,38 @@
       </div>
     </div>
     <div id="mobileOverlay" class="rippleEffect"></div>
-    <div id="app" class="app"></div>
+    <div id="app" class="app">
+
+      
+    </div>
     <div class="footer">
       <p>The Compassion Project Inc.</p>
       <div class="buttonsHolder">
         <div class="socialButtons">
-        <a
-          target="_blank"
-          href="https://www.instagram.com/compassionprojectinc/"
-          class="footerBtn"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.facebook.com/profile.php?id=61581775569792"
-          class="footerBtn"
-        >
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.tiktok.com/@compassionprojectinc"
-          class="footerBtn"
-          ><i class="fa-brands fa-tiktok"></i
-        ></a>
-      </div>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/compassionprojectinc/"
+            class="footerBtn"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=61581775569792"
+            class="footerBtn"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@compassionprojectinc"
+            class="footerBtn"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
         <a class="docsButton" href="#ourDocuments">View Our Documents</a>
       </div>
 
-      
       <div class="devCallout">
         <p>
           Made with <i class="heart fa-solid fa-heart"></i> and
@@ -103,7 +118,7 @@
         </p>
       </div>
     </div>
-    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="/lib/jquery-3.7.1.min.js"></script>
     <script type="module" src="app/app.js"></script>
   </body>
 </html>
