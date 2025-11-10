@@ -1,4 +1,50 @@
+import '../css/styles.css';
 
+import $ from "jquery";
+
+import { fetchAndDisplayEvents, renderEventCards } from "./firebase.js";
+
+const STATIC_TEST_EVENTS = [
+    {
+        id: 1,
+        title: "Winter Coat Drive",
+        description: "Collecting warm coats and blankets for neighbors experiencing cold weather hardship.",
+        image: "assets/img/event-coats.jpg"
+    },
+    {
+        id: 2,
+        title: "Annual Gala Fundraiser",
+        description: "Our biggest fundraising event of the year, featuring dinner, auction, and inspiring speeches.",
+        image: "assets/img/event-gala.jpg"
+    },
+    {
+        id: 3,
+        title: "Community Cleanup Day",
+        description: "Helping to beautify local parks and community spaces in Central Indiana.",
+        image: "assets/img/event-cleanup.jpg"
+    },
+    {
+        // Minimal data test case (Should still render)
+        id: 4,
+        title: "Board Meeting (Private)" 
+    }
+];
+
+function testAndInjectEvents() {
+    const eventContainerId = 'event-cards-container';
+    const targetElement = document.getElementById(eventContainerId);
+
+    if (!targetElement) {
+        // Log an error if the element isn't found, which helps debug timing
+        console.error("Target event container (#event-cards-container) not found for static injection.");
+        return; 
+    }
+    
+    console.log("SUCCESS: Event container found. Injecting static test cards...");
+    
+    // Call the rendering function with the static data and the found element
+    renderEventCards(STATIC_TEST_EVENTS, targetElement);
+}
 
 function changeRoute() {
   let hashTag = window.location.hash;
@@ -16,6 +62,13 @@ function changeRoute() {
       $("#app").html(data);
     });
   }
+
+  if (pageID === 'home' || pageID === '') {
+    // fetchAndDisplayEvents(renderEventCards);
+    testAndInjectEvents();
+
+  }
+
   setTimeout(() => {
       window.scrollTo(0, 0); 
   }, 100);
