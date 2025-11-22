@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "scss": "sass scss/styles.scss css/styles.css --watch --no-source-map"
+    "scss": "sass scss/styles.scss css/styles.css --watch --no-source-map",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,8 @@
     "sass": "^1.93.2"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "firebase": "^12.5.0",
     "fontawesome": "^5.6.3"
   }

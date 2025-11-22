@@ -1,11 +1,34 @@
-// NOTE: Assume you have initialized and configured your Firebase app elsewhere (e.g., firebase-config.js)
-import { db } from "../firebase.config.js";
+// import { db } from "../firebase.config.js";
+// import { auth } from "../firebase.config.js";
 import {
   collection,
   getDocs,
 } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
-import { auth } from "../firebase.config.js";
+
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: process.env.VITE_FIREBASE_API_KEY,
+    authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.VITE_FIREBASE_APP_ID,
+    measurementId: process.env.VITE_FIREBASE_MEASUREMENT_ID
+};
+
+import { initializeApp } from "firebase/app"; 
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+if (!firebaseConfig.apiKey) {
+    console.error("Firebase Configuration is missing. Check Vercel Environment Variables.");
+    throw new Error("Missing Firebase Config");
+}
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app); 
+export const db = getFirestore(app);
 
 const EVENTS_COLLECTION = "events"; // Your Firebase Collection Name
 

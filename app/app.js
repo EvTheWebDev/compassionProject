@@ -1,5 +1,5 @@
 import { fetchAndDisplayEvents, renderEventCards, loginListeners } from "./firebase.js";
-import { auth } from '../firebase.config.js'; 
+import { auth, db } from './firebase.js'; 
 
 
 const STATIC_TEST_EVENTS = [
