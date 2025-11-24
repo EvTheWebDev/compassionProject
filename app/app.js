@@ -15,9 +15,7 @@ const STATIC_TEST_EVENTS = [
 ];
 
 
-// MODAL FUNCTIONALITY
-
-const EVENT_DATA_SOURCE = STATIC_TEST_EVENTS; // Or your Firebase array
+const EVENT_DATA_SOURCE = STATIC_TEST_EVENTS;
 
 function initModalFunctionality() {
     const modal = document.getElementById('siteModal');
