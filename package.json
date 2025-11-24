@@ -8,12 +8,16 @@
   },
   "scripts": {
     "scss": "sass scss/styles.scss css/styles.css --watch --no-source-map",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.93.2"
+    "sass": "^1.93.2",
+    "vite": "^6.4.1"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
