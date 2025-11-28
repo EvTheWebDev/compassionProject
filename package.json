@@ -9,11 +9,8 @@
   "scripts": {
     "scss": "sass scss/styles.scss css/styles.css --watch --no-source-map",
     "start": "node server.js",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "wp-start": "BROWSER='Brave Browser' webpack serve --open --config webpack.config.js",
-    "wp-build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "author": "",
   "license": "ISC",
