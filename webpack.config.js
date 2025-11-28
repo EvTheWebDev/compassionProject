@@ -82,7 +82,9 @@ module.exports = {
   },
 
   plugins: [
-    new Dotenv(),
+    new Dotenv({
+      systemvars: true, // 🔑 Loads variables from Vercel's system environment
+    }),
 
     // 🔑 FIX 3: Point to the correct Source HTML
     // We assume your source index.html is located at 'src/index.html'
