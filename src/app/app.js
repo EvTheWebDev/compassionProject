@@ -1,6 +1,7 @@
 import { fetchAndDisplayEvents, renderEventCards, loginListeners } from "./firebase.js";
 import { auth, db } from './firebase.js'; 
-import $ from 'jquery';
+import * as $ from 'jquery';
+import '../scss/main.scss';
 
 
 const STATIC_TEST_EVENTS = [
@@ -123,7 +124,7 @@ function changeRoute() {
   let pageID = hashTag.replace("#", "");
 
   if (pageID != "") {
-    $.get(`pages/${pageID}.html`, function (data) {
+    $.get(`/pages/${pageID}.html`, function (data) {
       $("#app").html(data);
       
       if (pageID === 'admin') {

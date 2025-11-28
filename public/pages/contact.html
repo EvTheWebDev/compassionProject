@@ -10,7 +10,7 @@
             <div class="contact-form-wrapper">
                 <div class="contentFormComingSoon"></div>
                 <h3>Send Us a Message</h3>
-                <form id="contactForm" class="contact-form" action="https://formsubmit.co/evanjschmitt@gmail.com" method="POST">
+                <form id="contactForm" class="contact-form" action="/api/send_email" method="POST">
                     
                     <div class="form-group">
                         <label for="name">Your Name</label>
@@ -24,7 +24,7 @@
 
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject">
+                        <input type="text" id="subject" name="subject" required>
                     </div>
 
                     <div class="form-group">
